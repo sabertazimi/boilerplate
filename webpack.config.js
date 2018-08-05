@@ -31,7 +31,7 @@ module.exports = {
           {
             loader: 'html-loader',
             options: {
-              minimize: true,
+              minimize: !devMode,
             },
           },
         ],
@@ -43,7 +43,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              minimize: true,
+              minimize: !devMode,
             },
           },
           'postcss-loader',
