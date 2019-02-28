@@ -5,7 +5,25 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
+const packageJson = require('./package.json');
+
 const devMode = process.env.NODE_ENV !== 'production';
+const useSass = !!(packageJson.devDependencies['node-sass']);
+
+const styleLoader = [
+  devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+  {
+    loader: 'css-loader',
+    options: {
+      minimize: !devMode,
+    },
+  },
+  'postcss-loader',
+];
+
+if (useSass) {
+  styleLoader.push('sass-loader');
+}
 
 module.exports = {
   entry: {
@@ -38,17 +56,7 @@ module.exports = {
       },
       {
         test: /\.(css|scss)$/,
-        use: [
-          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-          {
-            loader: 'css-loader',
-            options: {
-              minimize: !devMode,
-            },
-          },
-          'postcss-loader',
-          'sass-loader',
-        ],
+        use: [...styleLoader],
       },
     ],
   },
