@@ -12,12 +12,7 @@ const useSass = !!(packageJson.devDependencies['node-sass']);
 
 const styleLoader = [
   devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-  {
-    loader: 'css-loader',
-    options: {
-      minimize: !devMode,
-    },
-  },
+  'css-loader',
   'postcss-loader',
 ];
 
