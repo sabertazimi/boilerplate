@@ -4,11 +4,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 const packageJson = require('./package.json');
 
 const devMode = process.env.NODE_ENV !== 'production';
-const useSass = !!(packageJson.devDependencies['node-sass']);
+const useSass = !!packageJson.devDependencies['node-sass'];
 
 const styleLoader = [
   devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
@@ -31,12 +32,14 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        use: ['ts-loader'],
+      },
+      {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: [
-          'babel-loader',
-          'eslint-loader',
-        ],
+        use: ['babel-loader'],
       },
       {
         test: /\.html$/,
@@ -82,9 +85,10 @@ module.exports = {
       chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
     }),
     new StyleLintPlugin(),
+    new ESLintPlugin({ extensions: ['js', 'jsx', 'ts', 'tsx'] }),
   ],
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', 'ts', 'tsx'],
   },
   devtool: 'source-map',
 };
