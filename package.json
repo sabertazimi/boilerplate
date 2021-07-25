@@ -6,9 +6,10 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "dev": "cross-env NODE_ENV=development webpack serve --port 2333 --mode development --open",
-    "lint": "stylelint ./src/**/*.scss ./src/**/*.css && eslint --ext .js,.jsx,.ts,.tsx ./src",
-    "start": "npm run dev",
-    "type-check": "tsc --noEmit"
+    "lint": "npm run lint:style && npm run lint:type-check",
+    "lint:style": "stylelint ./src/**/*.scss ./src/**/*.css && eslint --ext .js,.jsx,.ts,.tsx ./src",
+    "lint:type-check": "tsc --noEmit",
+    "start": "npm run dev"
   },
   "repository": {
     "type": "git",
