@@ -81,8 +81,8 @@ module.exports = {
       filename: './index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: devMode ? '[name].css' : '[name].[hash].css',
-      chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
+      filename: devMode ? '[name].css' : '[name].[chunkhash].css',
+      chunkFilename: devMode ? '[id].css' : '[id].[chunkhash].css',
     }),
     new StyleLintPlugin(),
     new ESLintPlugin({ extensions: ['js', 'jsx', 'ts', 'tsx'] }),
