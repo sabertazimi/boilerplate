@@ -1,6 +1,6 @@
 {
   "include": ["./src/**/*"],
-  "exclude": ["node_modules", "build", "dist", "public", "coverage"],
+  "exclude": ["node_modules", "build", "dist", "coverage"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
