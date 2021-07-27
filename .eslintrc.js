@@ -5,9 +5,13 @@ module.exports = {
     node: true,
   },
   extends: [
+    'eslint:recommended',
+    'plugin:import/recommended',
+    'plugin:jsx-a11y/recommended',
     'plugin:react/recommended',
-    'airbnb',
-    'prettier',
+    'plugin:react-hooks/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -17,10 +21,14 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-    '@typescript-eslint',
-  ],
+  plugins: ['import', 'jsx-a11y', 'react', 'react-hooks', '@typescript-eslint'],
+  settings: {
+    react: {
+      version: 'detect', // detect react version
+    },
+  },
   rules: {
+    'react/prop-types': 0,
+    'react/jsx-props-no-spreading': 0,
   },
 };
