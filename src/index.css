@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500'); 
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
 
 :root {
   --color-gray-0: #f8f9fa;
@@ -17,7 +17,8 @@
   --color-warning: #f59f00;
   --color-danger: #f03e3e;
   --color-info: #1c7ed6;
-  --font-stack: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, 'Open Sans', Arial, sans-serif, serif;
+  --font-stack: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', helvetica,
+    'Open Sans', arial, sans-serif, serif;
 }
 
 body {
@@ -37,4 +38,3 @@ body {
 *::after {
   box-sizing: inherit;
 }
-
