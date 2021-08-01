@@ -9,6 +9,8 @@
     "lint": "npm run lint:style && npm run lint:type-check",
     "lint:style": "stylelint --fix ./src/**/*.scss ./src/**/*.css && eslint --fix --ext .js,.jsx,.ts,.tsx ./src",
     "lint:type-check": "tsc --noEmit",
+    "prelease": "standard-version --dry-run",
+    "release": "standard-version",
     "start": "npm run dev"
   },
   "repository": {
@@ -56,6 +58,7 @@
     "postcss-loader": "^6.1.1",
     "prettier": "^2.3.2",
     "sass-loader": "^12.1.0",
+    "standard-version": "^9.3.1",
     "style-loader": "^3.2.1",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
