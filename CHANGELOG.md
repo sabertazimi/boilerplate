@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.3](https://github.com/sabertazimi/boilerplate/compare/v1.0.2...v1.0.3) (2021-08-02)
+
+
+### Building Work
+
+* **deps-dev:** bump webpack from 5.47.1 to 5.48.0 ([852c24c](https://github.com/sabertazimi/boilerplate/commit/852c24c648d40e4cec8c93626f5926a7e324e966))
+
 ### [1.0.2](https://github.com/sabertazimi/boilerplate/compare/v1.0.1...v1.0.2) (2021-08-02)
 
 
