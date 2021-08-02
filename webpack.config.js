@@ -23,7 +23,7 @@ if (useSass) {
 
 module.exports = {
   entry: {
-    main: './src/index.js',
+    main: './src/index.ts',
   },
   output: {
     filename: '[name].[chunkhash].js',
