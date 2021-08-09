@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.2](https://github.com/sabertazimi/boilerplate/compare/v2.0.1...v2.0.2) (2021-08-09)
+
+
+### Bug Fixes
+
+* **deps-dev:** add node-fetch for badge generation ([166b8eb](https://github.com/sabertazimi/boilerplate/commit/166b8ebcb565f6c4da33c916c1036cce1c559631))
+
+
+### Building Work
+
+* **CI:** generate Jest badge after building work ([fa8b1d3](https://github.com/sabertazimi/boilerplate/commit/fa8b1d3345acbfb9250b6e37a116d79a49ab6443))
+
 ### [2.0.1](https://github.com/sabertazimi/boilerplate/compare/v2.0.0...v2.0.1) (2021-08-09)
 
 
