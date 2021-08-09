@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/sabertazimi/boilerplate/compare/v2.0.0...v2.0.1) (2021-08-09)
+
+
+### Bug Fixes
+
+* **boilerplate-ParticleFactory:** enable empty particle options ([0a9e904](https://github.com/sabertazimi/boilerplate/commit/0a9e904556cee80211b949a0ee03cc2c6231294f))
+
+
+### Building Work
+
+* **Jest:** add Jest watch NPM script ([5f22023](https://github.com/sabertazimi/boilerplate/commit/5f22023f3e0a911071f48335e2cc7700d9dbda05))
+* **Jest:** remove redundant log output ([5589f47](https://github.com/sabertazimi/boilerplate/commit/5589f47b34e2e425208a5884b419afb757485715))
+
+
+### Testing
+
+* **boilerplate-Particle:** add ExplodingParticle testing ([f53ef6d](https://github.com/sabertazimi/boilerplate/commit/f53ef6dd0f984b3085c8adafabfcce8813f4702e))
+* **boilerplate-ParticleFactory:** add full testing ([78f966d](https://github.com/sabertazimi/boilerplate/commit/78f966da4b249737036ca9331bf3c850a9c878ac))
+
 ## [2.0.0](https://github.com/sabertazimi/boilerplate/compare/v1.0.3...v2.0.0) (2021-08-09)
 
 
