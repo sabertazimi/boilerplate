@@ -1,4 +1,4 @@
-# boilerplate
+# Boilerplate
 
 [![Author](https://img.shields.io/badge/author-sabertaz-lightgrey?style=for-the-badge)](https://github.com/sabertazimi)
 [![LICENSE](https://img.shields.io/github/license/sabertazimi/boilerplate?style=for-the-badge)](https://raw.githubusercontent.com/sabertazimi/boilerplate/main/LICENSE)
@@ -7,7 +7,19 @@
 [![Continuous Integration](https://img.shields.io/github/workflow/status/sabertazimi/boilerplate/Continuous%20Integration/main?style=for-the-badge&logo=github)](https://github.com/sabertazimi/boilerplate/actions/workflows/ci.yml)
 [![Jest Coverage](https://raw.githubusercontents.com/sabertazimi/boilerplate/gh-pages/coverage-lines.svg)](https://github.com/sabertazimi/boilerplate/actions/workflows/ci.yml)
 
-Minimal web boilerplate.
+> Minimal web boilerplate.
+
+## Feature
+
+- **TypeScript** first. Robust type checking.
+- **Babel** transpile support.
+- **Webpack** for hot reload development and dedicated building work.
+- **Jest** and **Testing Library** for robust unit tests and detailed coverage report.
+- **PostCSS** for CSS auto-prefixer support.
+- **ESLint** with TypeScript parser for TypeScript style check.
+- **StyleLint** with custom rules for CSS style check.
+- **Prettier** for format TypeScript and CSS code elegantly.
+- Convenient version release with **Standard Version**.
 
 ## React Support
 
