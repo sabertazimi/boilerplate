@@ -85,7 +85,9 @@ module.exports = {
       filename: devMode ? '[name].css' : '[name].[contenthash].css',
       chunkFilename: devMode ? '[id].css' : '[id].[contenthash].css',
     }),
-    new StyleLintPlugin(),
+    new StyleLintPlugin({
+      exclude: ['node_modules', 'build', 'dist', 'coverage'],
+    }),
     new ESLintPlugin({ extensions: ['js', 'jsx', 'ts', 'tsx'] }),
   ],
   resolve: {
