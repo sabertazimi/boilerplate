@@ -12,7 +12,7 @@
     "prelease": "standard-version --dry-run -s",
     "release": "standard-version -s",
     "start": "npm run dev",
-    "test": "jest",
+    "test": "jest && npm run test:badge",
     "test:badge": "node scripts/generateJestCoverageBadge.js",
     "test:watch": "jest --watch"
   },
