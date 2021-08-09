@@ -9,6 +9,27 @@
 
 > Minimal web boilerplate.
 
+## Installation
+
+```bash
+git clone --depth=1 https://github.com/sabertazimi/boilerplate myApp
+```
+
+```bash
+cd myApp
+npm i
+npm start
+```
+
+## CLI Tool
+
+```bash
+npx bod create <appName> [-t]
+```
+
+More **CLI tool** information
+on repo [Bod](https://github.com/sabertazimi/bod).
+
 ## Feature
 
 - **TypeScript** first. Robust type checking.
