@@ -88,7 +88,7 @@ module.exports = {
     new ESLintPlugin({ extensions: ['js', 'jsx', 'ts', 'tsx'] }),
   ],
   resolve: {
-    extensions: ['.js', '.jsx', 'ts', 'tsx'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
   devtool: 'source-map',
 };
