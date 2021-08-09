@@ -9,10 +9,16 @@
 
 Minimal web boilerplate.
 
+## React Support
+
+```bash
+npm i react react-dom
+```
+
 ## Sass Support
 
 ```bash
-npm i node-sass^6.0.0
+npm i -D node-sass
 ```
 
 ## Contact
