@@ -13,7 +13,8 @@
     "release": "standard-version -s",
     "start": "npm run dev",
     "test": "jest",
-    "test:badge": "node scripts/generateJestCoverageBadge.js"
+    "test:badge": "node scripts/generateJestCoverageBadge.js",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
