@@ -16,7 +16,7 @@ class ParticleFactory {
     }
   }
 
-  emit(particleOptions: ParticleOptions): void {
+  emit(particleOptions?: ParticleOptions): void {
     const particle = new ExplodingParticle(particleOptions);
     this.particles.push(particle);
   }
