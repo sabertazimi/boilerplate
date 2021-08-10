@@ -46,12 +46,17 @@ on repo [Bod](https://github.com/sabertazimi/bod).
 
 ```bash
 npm i react react-dom
+npm i -D @types/react @types/react-dom
+```
+
+```bash
+npm i -D @testing-library/react @testing-library/react-hooks
 ```
 
 ## Sass Support
 
 ```bash
-npm i -D node-sass
+npm i -D node-sass @types/node-sass
 ```
 
 ## Contact
