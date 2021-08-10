@@ -1,13 +1,21 @@
 import ExplodingParticle from './ExplodingParticle';
 
-const mockContext = {
-  beginPath: jest.fn(),
-  arc: jest.fn(),
-  fillStyle: '',
-  fill: jest.fn(),
-} as unknown as CanvasRenderingContext2D;
-
 describe('ExplodingParticle', () => {
+  let mockContext: CanvasRenderingContext2D;
+
+  beforeEach(() => {
+    mockContext = {
+      beginPath: jest.fn(),
+      arc: jest.fn(),
+      fillStyle: '',
+      fill: jest.fn(),
+    } as unknown as CanvasRenderingContext2D;
+  });
+
+  afterEach(() => {
+    mockContext = {} as unknown as CanvasRenderingContext2D;
+  });
+
   test('should get same x, y, color and duration with empty options', () => {
     const particle = new ExplodingParticle();
     const defaultOptions = ExplodingParticle.getDefaultOptions();
@@ -44,6 +52,9 @@ describe('ExplodingParticle', () => {
     particle.draw(mockContext);
     expect(particle.startX).toBe(3);
     expect(particle.startY).toBe(-2);
+    expect(mockContext.beginPath).toHaveBeenCalledTimes(2);
+    expect(mockContext.arc).toHaveBeenCalledTimes(2);
+    expect(mockContext.fill).toHaveBeenCalledTimes(2);
   });
 
   test('should shrink radius when time passed', () => {
@@ -58,6 +69,9 @@ describe('ExplodingParticle', () => {
     expect(particle.radius).toBe(0.75);
     particle.draw(mockContext);
     expect(particle.radius).toBe(0.5);
+    expect(mockContext.beginPath).toHaveBeenCalledTimes(3);
+    expect(mockContext.arc).toHaveBeenCalledTimes(3);
+    expect(mockContext.fill).toHaveBeenCalledTimes(3);
   });
 
   test('should disappear (freezed) when radius becomes zero', () => {
@@ -80,5 +94,8 @@ describe('ExplodingParticle', () => {
     expect(particle.startX).toBe(1);
     expect(particle.startY).toBe(1);
     expect(particle.radius).toBe(0);
+    expect(mockContext.beginPath).toHaveBeenCalledTimes(1);
+    expect(mockContext.arc).toHaveBeenCalledTimes(1);
+    expect(mockContext.fill).toHaveBeenCalledTimes(1);
   });
 });
