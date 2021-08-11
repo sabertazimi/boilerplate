@@ -7,7 +7,7 @@
     "lib": ["DOM", "ESNext", "ES2021"],
     "allowJs": true,
     "jsx": "react",
-    "declaration": true,
+    "declaration": false,
     "sourceMap": true,
     "outDir": "./build",
     "removeComments": true,
