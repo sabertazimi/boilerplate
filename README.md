@@ -24,7 +24,7 @@ npm start
 ## CLI Tool
 
 ```bash
-npx bod create <appName> [-t]
+npx bod create <appName>
 ```
 
 More **CLI tool** information
