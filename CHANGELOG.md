@@ -2,6 +2,43 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/sabertazimi/boilerplate/compare/v2.0.2...v2.1.0) (2021-08-17)
+
+
+### Features
+
+* **TypeScript:** add ts-node for supporting TS scripts ([6110d90](https://github.com/sabertazimi/boilerplate/commit/6110d906f2195ffe53b655134f9bc9447629c0c3))
+
+
+### Bug Fixes
+
+* **boilerplate-test:** move mock setup to before/after hook ([7911db7](https://github.com/sabertazimi/boilerplate/commit/7911db74d76a5d8cf80585ccc66b59173319796c))
+* **deps-security:** bump url-parse from 1.5.1 to 1.5.3 ([bd57d6c](https://github.com/sabertazimi/boilerplate/commit/bd57d6c8deafc74c942c308500d26cadfdfb243a))
+* **deps-types:** add missing node-fetch TS types ([94da0bf](https://github.com/sabertazimi/boilerplate/commit/94da0bff957c22f6f51e5dcb7815c74dc6e844a5))
+* **Jest-badge:** rectify ts-node config ([4232ee6](https://github.com/sabertazimi/boilerplate/commit/4232ee65c6f24893924e952412de262236305979))
+* **Jest-badge:** rewrite badge generation with TS ([07cc25a](https://github.com/sabertazimi/boilerplate/commit/07cc25ad859db51a3c6bf9aeec3346320419d842))
+
+
+### Testing
+
+* **NODE_ENV:** set  NODE_ENV to `test` ([2f2ca66](https://github.com/sabertazimi/boilerplate/commit/2f2ca66a790f07ec75de94901fdb1193205f2637))
+
+
+### Building Work
+
+* **CI:** separate lint, test and building work ([d1bfbe8](https://github.com/sabertazimi/boilerplate/commit/d1bfbe80cf751681f2b651167de4179674cca843))
+* **deps-dev:** bump @types/jest from 26.0.24 to 27.0.1 ([3258c0e](https://github.com/sabertazimi/boilerplate/commit/3258c0ea6ba763828f27c33e01a36519251651be))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([ce6345e](https://github.com/sabertazimi/boilerplate/commit/ce6345e6ec63675dd895a18bf82cfbaf7666acf0))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([040c5a6](https://github.com/sabertazimi/boilerplate/commit/040c5a6f5bdfef8f7ad049a326f6351ac154e29b))
+* **deps-dev:** bump @typescript-eslint/parser from 4.29.0 to 4.29.1 ([fce999d](https://github.com/sabertazimi/boilerplate/commit/fce999de888bf7fbbc8f90ab8f7705b498a78e08))
+* **deps-dev:** bump @typescript-eslint/parser from 4.29.1 to 4.29.2 ([bfcabff](https://github.com/sabertazimi/boilerplate/commit/bfcabffd9e1350fb65cc2cae46ca3c8d22e25e38))
+* **deps-dev:** bump tslib from 2.3.0 to 2.3.1 ([abf148a](https://github.com/sabertazimi/boilerplate/commit/abf148a8c32ecaa713de7344062a09255249fb3e))
+* **deps-dev:** bump webpack from 5.49.0 to 5.50.0 ([6d07fa7](https://github.com/sabertazimi/boilerplate/commit/6d07fa7bdddec0cec373544b87b07b78fd38e288))
+* **deps-dev:** bump webpack-cli from 4.7.2 to 4.8.0 ([9909a33](https://github.com/sabertazimi/boilerplate/commit/9909a331c119cf67697c4349d4feeb9031c7a7e9))
+* **deps-dev:** remove redundant testing-library ([eaf0cba](https://github.com/sabertazimi/boilerplate/commit/eaf0cbaedf347845fc03dba2326473d9710f672a))
+* **Jest-badge:** remove redundant error checking ([50bfd30](https://github.com/sabertazimi/boilerplate/commit/50bfd302e19b4ceef7f3656e4c3fed9f85ca77e5))
+* **TypeScript:** remove types definition ([505faad](https://github.com/sabertazimi/boilerplate/commit/505faad5fc53be1bed4d5df26dbe2d4ef07e1e43))
+
 ### [2.0.2](https://github.com/sabertazimi/boilerplate/compare/v2.0.1...v2.0.2) (2021-08-09)
 
 
