@@ -4,7 +4,8 @@
   "description": "Minimal web boilerplate",
   "main": "./src/index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --mode production && npm run test:badge",
+    "build": "cross-env NODE_ENV=production webpack --mode production && npm run build:badge",
+    "build:badge": "ts-node scripts/badge.ts",
     "dev": "cross-env NODE_ENV=development webpack serve --port 2333 --mode development --open",
     "lint": "npm run lint:style && npm run lint:type-check",
     "lint:style": "stylelint --fix ./src/**/*.scss ./src/**/*.css && eslint --fix --ext .js,.jsx,.ts,.tsx ./src",
@@ -13,7 +14,6 @@
     "release": "standard-version -s",
     "start": "npm run dev",
     "test": "jest",
-    "test:badge": "node scripts/generateJestCoverageBadge.js",
     "test:watch": "jest --watch"
   },
   "repository": {
