@@ -31,7 +31,7 @@ npx bod create <appName>
 More **CLI tool** information
 on repo [Bod](https://github.com/sabertazimi/bod).
 
-## Feature
+## Features
 
 - **TypeScript** first. Robust type checking.
 - **Babel** transpile support.
