@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/sabertazimi/boilerplate/compare/v2.2.0...v2.3.0) (2021-08-19)
+
+
+### :sparkles: Features
+
+* **webpack:** add bundle analyzer support ([e708c1f](https://github.com/sabertazimi/boilerplate/commit/e708c1f8bba87056ea014e5a2c59613263361534))
+
 ## [2.2.0](https://github.com/sabertazimi/boilerplate/compare/v2.1.0...v2.2.0) (2021-08-19)
 
 
