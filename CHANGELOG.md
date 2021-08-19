@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/sabertazimi/boilerplate/compare/v2.1.0...v2.2.0) (2021-08-19)
+
+
+### :bug: Bug Fixes
+
+* **CHANGELOG:** add emoji to changelog ([98961b1](https://github.com/sabertazimi/boilerplate/commit/98961b12316e8d96f82ddebef8418b1dbbc08549))
+* **Jest:** rectify deprecated `ts-jest` config ([e2b197a](https://github.com/sabertazimi/boilerplate/commit/e2b197abeb6d4874746bae9afc31ebba9f21dc02))
+
+
+### :rocket: Building Work
+
+* **CI-azure:** add more pipeline triggers ([37e2ebe](https://github.com/sabertazimi/boilerplate/commit/37e2ebe873fd847efb102603ebc7ad1655a3daa2))
+* **CI:** initialize git config ([f3d7ee6](https://github.com/sabertazimi/boilerplate/commit/f3d7ee6e2c085addc7b4db8e4c72dd246fc82c1a))
+* **CI:** set up CI with Azure Pipelines ([7a98a8f](https://github.com/sabertazimi/boilerplate/commit/7a98a8f1c4b616c3d469897c260ef02420687c5e))
+* **deps-dev:** bump @types/node from 16.6.1 to 16.6.2 ([e8192d5](https://github.com/sabertazimi/boilerplate/commit/e8192d589a8d1d6937c14751367d07203662e665))
+* **deps-dev:** bump ts-jest from 27.0.4 to 27.0.5 ([722754c](https://github.com/sabertazimi/boilerplate/commit/722754cbf9b6d87508b8c044ac67094533d3c0a0))
+* **deps-dev:** bump ts-node from 10.2.0 to 10.2.1 ([7a57323](https://github.com/sabertazimi/boilerplate/commit/7a573232cc2aefce50850df6e5b7740f578bb56b))
+* **deps-dev:** bump webpack from 5.50.0 to 5.51.0 ([b42b5e7](https://github.com/sabertazimi/boilerplate/commit/b42b5e74ef769e5d682c145a460c50115d82482e))
+* **deps-dev:** bump webpack-dev-server from 3.11.2 to 4.0.0 ([46fba74](https://github.com/sabertazimi/boilerplate/commit/46fba74a0a2bd9eb57f040d94e066cf32a177ef8))
+
+
+### :sparkles: Features
+
+* **test-coverage:** add support for coveralls report ([d5f7758](https://github.com/sabertazimi/boilerplate/commit/d5f77584871809d1d271af8c4c1632ddab61556c))
+* **webpack-assets:** process assets files with webpack assets module ([215afc1](https://github.com/sabertazimi/boilerplate/commit/215afc13d4b683b8cb4038ebbdfa7a9fe6aa4689))
+
 ## [2.1.0](https://github.com/sabertazimi/boilerplate/compare/v2.0.2...v2.1.0) (2021-08-17)
 
 
