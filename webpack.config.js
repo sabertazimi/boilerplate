@@ -1,28 +1,20 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
-const packageJson = require('./package.json');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
-const devMode = process.env.NODE_ENV !== 'production';
+const packageJson = require('./package.json');
+const devMode = process.env.NODE_ENV === 'development';
+const prodMode = process.env.NODE_ENV === 'production';
 const useSass = !!packageJson.devDependencies['node-sass'];
 const imageInlineSizeLimit = parseInt(
   process.env.IMAGE_INLINE_SIZE_LIMIT || '10000'
 );
-
-const styleLoader = [
-  devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-  'css-loader',
-  'postcss-loader',
-];
-
-if (useSass) {
-  styleLoader.push('sass-loader');
-}
 
 module.exports = {
   entry: {
@@ -57,7 +49,12 @@ module.exports = {
       },
       {
         test: /\.(css|scss)$/,
-        use: [...styleLoader],
+        use: [
+          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+          'css-loader',
+          'postcss-loader',
+          useSass && 'sass-loader',
+        ].filter(Boolean),
       },
       {
         test: [/\.avif$/],
@@ -129,7 +126,8 @@ module.exports = {
       exclude: ['node_modules', 'build', 'dist', 'coverage'],
     }),
     new ESLintPlugin({ extensions: ['js', 'jsx', 'ts', 'tsx'] }),
-  ],
+    prodMode && new BundleAnalyzerPlugin({ analyzerMode: 'static' }),
+  ].filter(Boolean),
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
     plugins: [new TsconfigPathsPlugin({ configFile: './tsconfig.json' })],
