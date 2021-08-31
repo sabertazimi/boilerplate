@@ -2,6 +2,41 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.4.0](https://github.com/sabertazimi/boilerplate/compare/v2.3.0...v2.4.0) (2021-08-31)
+
+
+### :sparkles: Features
+
+* **webpack-UI:** add elegant progressbar CLI UI ([a42ebb8](https://github.com/sabertazimi/boilerplate/commit/a42ebb89bbe2e1ad53e157a49d22a90e745b8164))
+
+
+### :rocket: Building Work
+
+* **dependabot:** change versioning strategy to `increase` ([75fc549](https://github.com/sabertazimi/boilerplate/commit/75fc549a604ed8440f173c0090f9857ed688102f))
+* **deps-dev:** bump @types/node from 16.6.2 to 16.7.1 ([44be075](https://github.com/sabertazimi/boilerplate/commit/44be0757e939652f52ccfe3bca63d899961df862))
+* **deps-dev:** bump @types/node from 16.7.1 to 16.7.4 ([493e089](https://github.com/sabertazimi/boilerplate/commit/493e08925abe7ed675a618ed7a383fa49f42071e))
+* **deps-dev:** bump @types/node from 16.7.4 to 16.7.6 ([1f648e4](https://github.com/sabertazimi/boilerplate/commit/1f648e4997fb9c65d63023004de651c24ded37dc))
+* **deps-dev:** bump @types/node from 16.7.6 to 16.7.8 ([#83](https://github.com/sabertazimi/boilerplate/issues/83)) ([a0f55b3](https://github.com/sabertazimi/boilerplate/commit/a0f55b329d477de820ba7e7e009a401d98efab5a))
+* **deps-dev:** bump @types/node from 16.7.8 to 16.7.9 ([#87](https://github.com/sabertazimi/boilerplate/issues/87)) ([b3b7f5a](https://github.com/sabertazimi/boilerplate/commit/b3b7f5a8a8820040315338a5750293eeb5d66637))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([9b2d2d5](https://github.com/sabertazimi/boilerplate/commit/9b2d2d59e62260cc001dd4f76d9d216f8310ea4e))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([#80](https://github.com/sabertazimi/boilerplate/issues/80)) ([7a4bc7b](https://github.com/sabertazimi/boilerplate/commit/7a4bc7b74916f9dee4b07bcd9ee49632cc30a4ad))
+* **deps-dev:** bump @typescript-eslint/parser from 4.29.2 to 4.29.3 ([dd59e36](https://github.com/sabertazimi/boilerplate/commit/dd59e3618e40c80fcab37036c71ec878783f0004))
+* **deps-dev:** bump @typescript-eslint/parser from 4.29.3 to 4.30.0 ([#82](https://github.com/sabertazimi/boilerplate/issues/82)) ([3748f96](https://github.com/sabertazimi/boilerplate/commit/3748f96e0b34ec8d926d0466a7ebe61f6a93d2c1))
+* **deps-dev:** bump autoprefixer from 10.3.1 to 10.3.2 ([6ce5f1c](https://github.com/sabertazimi/boilerplate/commit/6ce5f1c873c57d4826b52d43d965d03a1878d5ca))
+* **deps-dev:** bump autoprefixer from 10.3.2 to 10.3.3 ([261294d](https://github.com/sabertazimi/boilerplate/commit/261294de10202a22763221aabf6dc48bef99d78a))
+* **deps-dev:** bump eslint-plugin-import from 2.24.0 to 2.24.1 ([b298b4a](https://github.com/sabertazimi/boilerplate/commit/b298b4a58e4a89d2eef6b6ebd5d9e150911a0171))
+* **deps-dev:** bump eslint-plugin-import from 2.24.1 to 2.24.2 ([c267e1d](https://github.com/sabertazimi/boilerplate/commit/c267e1d7fea2c7922289a7d532f9ffd3dda4cc56))
+* **deps-dev:** bump eslint-plugin-prettier from 3.4.0 to 3.4.1 ([01bfd14](https://github.com/sabertazimi/boilerplate/commit/01bfd14628a94b68421b52c639e1d97257070d9b))
+* **deps-dev:** bump eslint-plugin-prettier from 3.4.1 to 4.0.0 ([#84](https://github.com/sabertazimi/boilerplate/issues/84)) ([d615b40](https://github.com/sabertazimi/boilerplate/commit/d615b4012097e1ce830aae23ad11dcfc42152dbf))
+* **deps-dev:** bump eslint-plugin-react from 7.24.0 to 7.25.0 ([978f0de](https://github.com/sabertazimi/boilerplate/commit/978f0deb974d0fecb3f2d35f8f678c008cc1e249))
+* **deps-dev:** bump eslint-plugin-react from 7.25.0 to 7.25.1 ([#81](https://github.com/sabertazimi/boilerplate/issues/81)) ([2da3954](https://github.com/sabertazimi/boilerplate/commit/2da3954bcf27b786a8d369e2d5ff77a6b6ba2e8e))
+* **deps-dev:** bump jest from 27.0.6 to 27.1.0 ([d415264](https://github.com/sabertazimi/boilerplate/commit/d4152648a8a89534097ab76095e28631fa5a9d9b))
+* **deps-dev:** bump mini-css-extract-plugin from 2.2.0 to 2.2.1 ([#86](https://github.com/sabertazimi/boilerplate/issues/86)) ([787d204](https://github.com/sabertazimi/boilerplate/commit/787d20429f12c0959ef37d039a54b91f124539f4))
+* **deps-dev:** bump typescript from 4.3.5 to 4.4.2 ([870b653](https://github.com/sabertazimi/boilerplate/commit/870b6532d42b7f00402d30139f69b9927fbd83ac))
+* **deps-dev:** bump webpack from 5.51.0 to 5.51.1 ([11bb681](https://github.com/sabertazimi/boilerplate/commit/11bb6816f002f7f89f99360138aa2c0b6866b07d))
+* **deps-dev:** bump webpack-dev-server from 4.0.0 to 4.1.0 ([#85](https://github.com/sabertazimi/boilerplate/issues/85)) ([776f410](https://github.com/sabertazimi/boilerplate/commit/776f41078c310c9714305d3e930c4295c55a7a54))
+* **Jest-badge:** rectify unknown error type in TS 4.4.0 ([115fc46](https://github.com/sabertazimi/boilerplate/commit/115fc464b148b33cae2029708fdde0d1ab674c67))
+
 ## [2.3.0](https://github.com/sabertazimi/boilerplate/compare/v2.2.0...v2.3.0) (2021-08-19)
 
 
