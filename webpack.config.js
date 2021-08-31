@@ -7,6 +7,7 @@ const StyleLintPlugin = require('stylelint-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const WebpackBar = require('webpackbar');
 
 const packageJson = require('./package.json');
 const devMode = process.env.NODE_ENV === 'development';
@@ -127,6 +128,7 @@ module.exports = {
     }),
     new ESLintPlugin({ extensions: ['js', 'jsx', 'ts', 'tsx'] }),
     prodMode && new BundleAnalyzerPlugin({ analyzerMode: 'static' }),
+    new WebpackBar(),
   ].filter(Boolean),
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
