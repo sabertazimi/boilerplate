@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.5.0](https://github.com/sabertazimi/boilerplate/compare/v2.4.0...v2.5.0) (2021-09-03)
+
+
+### :rocket: Building Work
+
+* **CI:** remove redundant artifacts stage ([d3a8898](https://github.com/sabertazimi/boilerplate/commit/d3a8898024cb3f5a13da283a3ef8e97fa9bc574f))
+
+
+### :sparkles: Features
+
+* **css-modules:** enable css modules suuport ([5061aba](https://github.com/sabertazimi/boilerplate/commit/5061abaf4694d7a343870a7a85c97fca859df9d4))
+
+
+### :bug: Bug Fixes
+
+* **devtool-source map:** change source map configuration ([d114a7e](https://github.com/sabertazimi/boilerplate/commit/d114a7ebccc4ec8a6bf1eeeb10383d18c073b3fa))
+
 ## [2.4.0](https://github.com/sabertazimi/boilerplate/compare/v2.3.0...v2.4.0) (2021-08-31)
 
 
