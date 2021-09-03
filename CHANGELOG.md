@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.6.0](https://github.com/sabertazimi/boilerplate/compare/v2.5.0...v2.6.0) (2021-09-03)
+
+
+### :zap: Performance
+
+* **webpack-output:** change `chunkhash` to `contenthash` ([9120c17](https://github.com/sabertazimi/boilerplate/commit/9120c17ddc8cd3c0a59e846532bd1516d10c3fa0))
+* **webpack:** enable build cache ([ad0baa3](https://github.com/sabertazimi/boilerplate/commit/ad0baa365d6c2fce134e1e233b112ae2f890adb5))
+* **webpack:** improve extension resolve performance ([12698c5](https://github.com/sabertazimi/boilerplate/commit/12698c5ab90958a8641bc7e5a5fee9841cbd2d17))
+
+
+### :sparkles: Features
+
+* **stylelint:** setup complex stylelint configuration ([705182b](https://github.com/sabertazimi/boilerplate/commit/705182bb6dd57b7501b0cb65aeeb3d5da4e3bee0))
+* **webpack-minimize:** add JS and CSS minimizer support ([1ec8a2e](https://github.com/sabertazimi/boilerplate/commit/1ec8a2ef63b79eac60b9ab423df5af86564ef8cc))
+* **webpack-split chunks:** enable split vendor chunks ([88a4643](https://github.com/sabertazimi/boilerplate/commit/88a4643ab0ef073f58dbfe1be20a16e01183d194))
+* **webpack:** enable hot module replacement ([5208d1f](https://github.com/sabertazimi/boilerplate/commit/5208d1f2df23b813a2f8affb0ccd0b2d6d61e98e))
+
+
+### :bug: Bug Fixes
+
+* **css:** rectify rule order ([7be7869](https://github.com/sabertazimi/boilerplate/commit/7be786971919c2ff3fc80750b363af942b6ab673))
+
+
+### :rocket: Building Work
+
+* **CI-badge:** move badge generation to `test` stage ([1c30035](https://github.com/sabertazimi/boilerplate/commit/1c300350c132c8413baf7e7dec784c7d55123c81))
+* **CI:** separate CI stages ([aa7af27](https://github.com/sabertazimi/boilerplate/commit/aa7af27a85fd870318d3dfe0cb236ac35f67aaa0))
+* **Jest-badge:** format code ([00cd3be](https://github.com/sabertazimi/boilerplate/commit/00cd3be8feb1c8aabc3236fd378b3e83a220af04))
+
 ## [2.5.0](https://github.com/sabertazimi/boilerplate/compare/v2.4.0...v2.5.0) (2021-09-03)
 
 
