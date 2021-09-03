@@ -139,12 +139,12 @@ module.exports = {
     new StyleLintPlugin({
       exclude: ['node_modules', 'build', 'dist', 'coverage'],
     }),
-    new ESLintPlugin({ extensions: ['js', 'jsx', 'ts', 'tsx'] }),
+    new ESLintPlugin({ extensions: ['tsx', 'ts', 'jsx', 'js'] }),
     prodMode && new BundleAnalyzerPlugin({ analyzerMode: 'static' }),
     new WebpackBar(),
   ].filter(Boolean),
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    extensions: ['.tsx', '.ts', '.jsx', '.js'],
     plugins: [new TsconfigPathsPlugin({ configFile: './tsconfig.json' })],
   },
   cache: {
