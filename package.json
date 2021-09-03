@@ -4,8 +4,8 @@
   "description": "Minimal web boilerplate",
   "main": "./src/index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --mode production && npm run build:badge",
-    "build:badge": "ts-node scripts/badge.ts",
+    "badge": "ts-node scripts/badge.ts",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
     "dev": "cross-env NODE_ENV=development webpack serve --port 2333 --mode development --hot --open",
     "lint": "npm run lint:style && npm run lint:type-check",
     "lint:style": "stylelint --fix ./src/**/*.scss ./src/**/*.css && eslint --fix --ext .js,.jsx,.ts,.tsx ./src",
