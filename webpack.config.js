@@ -173,6 +173,18 @@ module.exports = {
       }),
       new CssMinimizerPlugin(),
     ],
+    runtimeChunk: true,
+    splitChunks: {
+      chunks: 'all',
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          chunks: 'all',
+          priority: 10,
+          enforce: true,
+        },
+      },
+    },
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js'],
