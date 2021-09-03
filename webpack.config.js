@@ -39,6 +39,7 @@ module.exports = {
       },
       {
         test: /\.html$/,
+        exclude: /node_modules/,
         use: [
           {
             loader: 'html-loader',
@@ -50,15 +51,23 @@ module.exports = {
       },
       {
         test: /\.(css|scss)$/,
+        exclude: /node_modules/,
         use: [
           devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-          'css-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              importLoaders: useSass ? 2 : 1,
+            },
+          },
           'postcss-loader',
           useSass && 'sass-loader',
         ].filter(Boolean),
       },
       {
         test: [/\.avif$/],
+        exclude: /node_modules/,
         type: 'asset',
         mimetype: 'image/avif',
         parser: {
@@ -69,6 +78,7 @@ module.exports = {
       },
       {
         test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+        exclude: /node_modules/,
         type: 'asset',
         parser: {
           dataUrlCondition: {
@@ -78,6 +88,7 @@ module.exports = {
       },
       {
         test: /\.svg$/,
+        exclude: /node_modules/,
         use: [
           {
             loader: '@svgr/webpack',
@@ -104,10 +115,12 @@ module.exports = {
       },
       {
         test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        exclude: /node_modules/,
         use: 'url-loader?limit=10000',
       },
       {
         test: /\.(ttf|eot)(\?[\s\S]+)?$/,
+        exclude: /node_modules/,
         use: 'file-loader',
       },
     ],
