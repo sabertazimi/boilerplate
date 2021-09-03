@@ -147,5 +147,8 @@ module.exports = {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
     plugins: [new TsconfigPathsPlugin({ configFile: './tsconfig.json' })],
   },
+  cache: {
+    type: 'filesystem',
+  },
   devtool: 'eval-cheap-module-source-map',
 };
