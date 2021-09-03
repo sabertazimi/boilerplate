@@ -24,7 +24,7 @@ module.exports = {
     main: './src/index.ts',
   },
   output: {
-    filename: '[name].[chunkhash].js',
+    filename: devMode ? '[name].js' : '[name].[contenthash].js',
     path: path.resolve(__dirname, 'build'),
   },
   module: {
