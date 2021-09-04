@@ -194,6 +194,13 @@ module.exports = {
           minChunks: 2,
           reuseExistingChunk: true,
         },
+        particle: {
+          name: 'particle',
+          priority: 0,
+          chunks: 'all',
+          test: /[\\/]particle[\\/]/,
+          enforce: true,
+        },
       },
     },
   },
