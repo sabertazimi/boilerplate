@@ -1,4 +1,4 @@
-import ExplodingParticle from './ExplodingParticle';
+import ExplodingParticle from '../ExplodingParticle';
 
 describe('ExplodingParticle', () => {
   let mockContext: CanvasRenderingContext2D;

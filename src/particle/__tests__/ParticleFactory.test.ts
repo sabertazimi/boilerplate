@@ -1,4 +1,4 @@
-import ParticleFactory from './ParticleFactory';
+import ParticleFactory from '../ParticleFactory';
 
 describe('ParticleFactory', () => {
   test('should initial with empty particles array', () => {
