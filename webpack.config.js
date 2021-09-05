@@ -212,5 +212,5 @@ module.exports = {
   cache: {
     type: 'filesystem',
   },
-  devtool: 'eval-cheap-module-source-map',
+  devtool: devMode ? 'eval-cheap-module-source-map' : false,
 };
