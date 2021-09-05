@@ -19,6 +19,7 @@ const imageInlineSizeLimit = parseInt(
   process.env.IMAGE_INLINE_SIZE_LIMIT || '10000'
 );
 
+/** @type {import('webpack').Configuration} */
 module.exports = {
   entry: {
     main: './src/index.ts',
