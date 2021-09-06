@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.7.0](https://github.com/sabertazimi/boilerplate/compare/v2.6.0...v2.7.0) (2021-09-06)
+
+
+### :bug: Bug Fixes
+
+* **TypeScript-types:** add more third party types ([0b628fa](https://github.com/sabertazimi/boilerplate/commit/0b628fa7829db5d2867eba11ed790aee30ccf01a))
+* **webpack-split chunks:** improve split chunks configuration ([d76d2a3](https://github.com/sabertazimi/boilerplate/commit/d76d2a332d97303c0dbf27716b9f72960279801e))
+* **webpack:** disable production source map ([525e803](https://github.com/sabertazimi/boilerplate/commit/525e803c296a24ea130a7c9b9bb7da1b8ff68f72))
+
+
+### :rocket: Building Work
+
+* **deps-dev:** bump @babel/core from 7.15.0 to 7.15.5 ([#93](https://github.com/sabertazimi/boilerplate/issues/93)) ([a95abae](https://github.com/sabertazimi/boilerplate/commit/a95abaef775494b986b18b9297c0dad9c21626d8))
+* **deps-dev:** bump @babel/preset-env from 7.15.0 to 7.15.4 ([#89](https://github.com/sabertazimi/boilerplate/issues/89)) ([cdfe25c](https://github.com/sabertazimi/boilerplate/commit/cdfe25c748cf42b45bac7090123be30921cef58e))
+* **deps-dev:** bump @types/node from 16.7.9 to 16.7.10 ([#95](https://github.com/sabertazimi/boilerplate/issues/95)) ([a71efa7](https://github.com/sabertazimi/boilerplate/commit/a71efa7a3b0e9626eb10069952d49ccc97ad6257))
+* **deps-dev:** bump autoprefixer from 10.3.3 to 10.3.4 ([#92](https://github.com/sabertazimi/boilerplate/issues/92)) ([9103de6](https://github.com/sabertazimi/boilerplate/commit/9103de60e9be8f60fc6feaeaf2c6e6778e9e7859))
+* **deps-dev:** bump clean-webpack-plugin from 3.0.0 to 4.0.0 ([#90](https://github.com/sabertazimi/boilerplate/issues/90)) ([7b5f704](https://github.com/sabertazimi/boilerplate/commit/7b5f704ed6b12a673fc1c2cdf9467a1baa16a78e))
+* **deps-dev:** bump mini-css-extract-plugin from 2.2.1 to 2.2.2 ([#91](https://github.com/sabertazimi/boilerplate/issues/91)) ([0b761da](https://github.com/sabertazimi/boilerplate/commit/0b761da515cbaffd451d394033e5ea4c2aef28c4))
+* **deps-dev:** bump stylelint-config-bod from 5.3.1 to 5.3.3 ([#96](https://github.com/sabertazimi/boilerplate/issues/96)) ([d3552ce](https://github.com/sabertazimi/boilerplate/commit/d3552cead3caa8edc320141bb94048c3e83b9951))
+* **deps-dev:** bump webpack from 5.51.1 to 5.52.0 ([#97](https://github.com/sabertazimi/boilerplate/issues/97)) ([d35b2f1](https://github.com/sabertazimi/boilerplate/commit/d35b2f1065fd91ae98245c8f5db26f81bd210003))
+* **Jest:** enable Jest config intellisense ([01f9140](https://github.com/sabertazimi/boilerplate/commit/01f9140e389f2e9c3e1c59c50afd855490a17b69))
+* **webpack:** enable webpack config intellisense ([2bcb3aa](https://github.com/sabertazimi/boilerplate/commit/2bcb3aab2f12c0d2b00aae80bb9591f6c883f720))
+* **webpack:** split `particle` into a single chunk ([d21c081](https://github.com/sabertazimi/boilerplate/commit/d21c08121d628b54f8f79123b50f9a621f5fb54a))
+
 ## [2.6.0](https://github.com/sabertazimi/boilerplate/compare/v2.5.0...v2.6.0) (2021-09-03)
 
 
