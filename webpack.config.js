@@ -28,6 +28,12 @@ module.exports = {
     filename: devMode ? '[name].js' : '[name].[contenthash].js',
     path: path.resolve(__dirname, 'build'),
   },
+  mode: devMode ? 'development' : 'production',
+  devServer: {
+    hot: true,
+    open: true,
+    port: 2333,
+  },
   module: {
     rules: [
       {
