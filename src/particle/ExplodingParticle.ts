@@ -73,10 +73,13 @@ class ExplodingParticle {
 
     if (shouldDraw) {
       // Draw a circle at the current location
+      ctx.save();
       ctx.beginPath();
       ctx.arc(this.startX, this.startY, this.radius, 0, Math.PI * 2);
       ctx.fillStyle = `rgba(${this.color[0]},${this.color[1]},${this.color[2]},1)`;
       ctx.fill();
+      ctx.closePath();
+      ctx.restore();
 
       // Update the particle's location and life
       this.startX += this.speed.x;
