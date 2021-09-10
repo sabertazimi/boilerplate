@@ -14,6 +14,7 @@ const WebpackBar = require('webpackbar');
 const packageJson = require('./package.json');
 const devMode = process.env.NODE_ENV === 'development';
 const prodMode = process.env.NODE_ENV === 'production';
+const isEnvProductionProfile = prodMode && process.argv.includes('--profile');
 const useSass = !!packageJson.devDependencies['node-sass'];
 const imageInlineSizeLimit = parseInt(
   process.env.IMAGE_INLINE_SIZE_LIMIT || '10000'
@@ -167,6 +168,8 @@ module.exports = {
             drop_console: true,
             comparisons: false,
             inline: 2,
+            keep_classnames: isEnvProductionProfile,
+            keep_fnames: isEnvProductionProfile,
           },
           mangle: {
             safari10: true,
