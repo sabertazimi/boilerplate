@@ -1,4 +1,4 @@
-import ExplodingParticle, { ParticleOptions } from './ExplodingParticle';
+import ExplodingParticle, { ParticleProps } from './ExplodingParticle';
 
 class ParticleFactory {
   particles: ExplodingParticle[];
@@ -16,8 +16,8 @@ class ParticleFactory {
     }
   }
 
-  emit(particleOptions?: ParticleOptions): void {
-    const particle = new ExplodingParticle(particleOptions);
+  emit(particleProps?: ParticleProps): void {
+    const particle = new ExplodingParticle(particleProps);
     this.particles.push(particle);
   }
 }

@@ -16,25 +16,25 @@ describe('ExplodingParticle', () => {
     mockContext = {} as unknown as CanvasRenderingContext2D;
   });
 
-  test('should get same x, y, color and duration with empty options', () => {
+  test('should get same x, y, color and duration with empty props', () => {
     const particle = new ExplodingParticle();
-    const defaultOptions = ExplodingParticle.getDefaultOptions();
+    const defaultProps = ExplodingParticle.getDefaultProps();
 
-    expect(particle.startX).toBe(defaultOptions.x);
-    expect(particle.startY).toBe(defaultOptions.y);
-    expect(particle.color).toStrictEqual(defaultOptions.color);
-    expect(particle.animationDuration).toBe(defaultOptions.duration);
+    expect(particle.startX).toBe(defaultProps.x);
+    expect(particle.startY).toBe(defaultProps.y);
+    expect(particle.color).toStrictEqual(defaultProps.color);
+    expect(particle.animationDuration).toBe(defaultProps.duration);
   });
 
-  test('should get random radius, speed and life with empty options', () => {
+  test('should get random radius, speed and life with empty props', () => {
     const particle = new ExplodingParticle();
-    const defaultOptions = ExplodingParticle.getDefaultOptions();
+    const defaultProps = ExplodingParticle.getDefaultProps();
 
-    expect(particle.radius).not.toBe(defaultOptions.radius);
-    expect(particle.speed).not.toStrictEqual(defaultOptions.speed);
+    expect(particle.radius).not.toBe(defaultProps.radius);
+    expect(particle.speed).not.toStrictEqual(defaultProps.speed);
     expect(particle.life).toBe(particle.remainingLife);
-    expect(particle.life).not.toBe(defaultOptions.life);
-    expect(particle.remainingLife).not.toBe(defaultOptions.life);
+    expect(particle.life).not.toBe(defaultProps.life);
+    expect(particle.remainingLife).not.toBe(defaultProps.life);
   });
 
   test('should move according to its speed', () => {

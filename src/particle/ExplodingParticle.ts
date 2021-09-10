@@ -3,7 +3,7 @@ interface Speed {
   y: number;
 }
 
-interface ParticleOptions {
+interface ParticleProps {
   x?: number;
   y?: number;
   color?: number[];
@@ -24,8 +24,8 @@ class ExplodingParticle {
   life: number;
   remainingLife: number;
 
-  static getDefaultOptions(): ParticleOptions {
-    const defaultOptions: ParticleOptions = {
+  static getDefaultProps(): ParticleProps {
+    const defaultProps: ParticleProps = {
       x: 0,
       y: 0,
       color: [156, 39, 176],
@@ -38,14 +38,14 @@ class ExplodingParticle {
       life: 30 + Math.random() * 10,
     };
 
-    return defaultOptions;
+    return defaultProps;
   }
 
-  constructor(options?: ParticleOptions) {
-    const defaultOptions = ExplodingParticle.getDefaultOptions();
+  constructor(props?: ParticleProps) {
+    const defaultProps = ExplodingParticle.getDefaultProps();
     const { x, y, color, duration, speed, radius, life } = {
-      ...defaultOptions,
-      ...options,
+      ...defaultProps,
+      ...props,
     };
 
     this.startX = x as number;
@@ -88,4 +88,4 @@ class ExplodingParticle {
 }
 
 export default ExplodingParticle;
-export type { Speed, ParticleOptions };
+export type { Speed, ParticleProps };

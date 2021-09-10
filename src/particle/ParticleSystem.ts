@@ -1,4 +1,4 @@
-import { ParticleOptions } from './ExplodingParticle';
+import { ParticleProps } from './ExplodingParticle';
 import ParticleFactory from './ParticleFactory';
 
 class ParticleSystem {
@@ -69,7 +69,7 @@ class ParticleSystem {
     });
   }
 
-  emit({ x = 0, y = 0, color = [156, 39, 176], speed }: ParticleOptions): void {
+  emit({ x = 0, y = 0, color = [156, 39, 176], speed }: ParticleProps): void {
     this.factory.emit({ x, y, color, speed });
   }
 
