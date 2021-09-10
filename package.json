@@ -42,6 +42,7 @@
     "@types/jest": "^27.0.1",
     "@types/node": "^16.7.10",
     "@types/node-fetch": "^2.5.12",
+    "@types/webpack-dev-server": "^4.1.0",
     "@typescript-eslint/eslint-plugin": "^4.30.0",
     "@typescript-eslint/parser": "^4.30.0",
     "autoprefixer": "^10.3.4",
