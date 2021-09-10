@@ -1,21 +1,22 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
-const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const WebpackBar = require('webpackbar');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 const packageJson = require('./package.json');
-const devMode = process.env.NODE_ENV === 'development';
-const prodMode = process.env.NODE_ENV === 'production';
-const isEnvProductionProfile = prodMode && process.argv.includes('--profile');
-const useSass = !!packageJson.devDependencies['node-sass'];
+const isEnvDevelopment = process.env.NODE_ENV === 'development';
+const isEnvProduction = process.env.NODE_ENV === 'production';
+const isEnvProductionProfile =
+  isEnvProduction && process.argv.includes('--profile');
+const useSass = Boolean(packageJson.devDependencies['node-sass']);
 const imageInlineSizeLimit = parseInt(
   process.env.IMAGE_INLINE_SIZE_LIMIT || '10000'
 );
@@ -26,10 +27,10 @@ module.exports = {
     main: './src/index.ts',
   },
   output: {
-    filename: devMode ? '[name].js' : '[name].[contenthash].js',
+    filename: isEnvDevelopment ? '[name].js' : '[name].[contenthash].js',
     path: path.resolve(__dirname, 'build'),
   },
-  mode: devMode ? 'development' : 'production',
+  mode: isEnvDevelopment ? 'development' : 'production',
   devServer: {
     hot: true,
     open: true,
@@ -54,7 +55,7 @@ module.exports = {
           {
             loader: 'html-loader',
             options: {
-              minimize: !devMode,
+              minimize: isEnvProduction,
             },
           },
         ],
@@ -63,7 +64,7 @@ module.exports = {
         test: /\.(css|scss)$/,
         exclude: /node_modules/,
         use: [
-          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+          isEnvDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
@@ -143,18 +144,18 @@ module.exports = {
       filename: './index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: devMode ? '[name].css' : '[name].[contenthash].css',
-      chunkFilename: devMode ? '[id].css' : '[id].[contenthash].css',
+      filename: isEnvDevelopment ? '[name].css' : '[name].[contenthash].css',
+      chunkFilename: isEnvDevelopment ? '[id].css' : '[id].[contenthash].css',
     }),
     new StyleLintPlugin({
       exclude: ['node_modules', 'build', 'dist', 'coverage'],
     }),
     new ESLintPlugin({ extensions: ['tsx', 'ts', 'jsx', 'js'] }),
-    prodMode && new BundleAnalyzerPlugin({ analyzerMode: 'static' }),
+    isEnvProduction && new BundleAnalyzerPlugin({ analyzerMode: 'static' }),
     new WebpackBar(),
   ].filter(Boolean),
   optimization: {
-    minimize: prodMode ? true : false,
+    minimize: isEnvProduction,
     minimizer: [
       new TerserPlugin({
         parallel: true,
@@ -221,5 +222,5 @@ module.exports = {
   cache: {
     type: 'filesystem',
   },
-  devtool: devMode ? 'eval-cheap-module-source-map' : false,
+  devtool: isEnvDevelopment ? 'eval-cheap-module-source-map' : false,
 };
