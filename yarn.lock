@@ -3359,7 +3359,7 @@ __metadata:
     jest: 27.1.1
     mini-css-extract-plugin: 2.3.0
     node-fetch: 2.6.2
-    postcss: ^8.3.6
+    postcss: 8.3.6
     postcss-loader: 6.1.1
     prettier: 2.4.0
     sass-loader: 12.1.0
@@ -9722,7 +9722,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.2.15, postcss@npm:^8.3.5, postcss@npm:^8.3.6":
+"postcss@npm:8.3.6, postcss@npm:^8.2.15, postcss@npm:^8.3.5":
   version: 8.3.6
   resolution: "postcss@npm:8.3.6"
   dependencies:
