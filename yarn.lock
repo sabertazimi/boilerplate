@@ -30,7 +30,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:7.15.5, @babel/core@npm:>=7.9.0, @babel/core@npm:^7.1.0, @babel/core@npm:^7.12.3, @babel/core@npm:^7.15.5, @babel/core@npm:^7.7.2, @babel/core@npm:^7.7.5":
+"@babel/core@npm:7.15.5, @babel/core@npm:>=7.9.0, @babel/core@npm:^7.1.0, @babel/core@npm:^7.12.3, @babel/core@npm:^7.7.2, @babel/core@npm:^7.7.5":
   version: 7.15.5
   resolution: "@babel/core@npm:7.15.5"
   dependencies:
@@ -364,7 +364,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-class-properties@npm:^7.14.5":
+"@babel/plugin-proposal-class-properties@npm:7.14.5, @babel/plugin-proposal-class-properties@npm:^7.14.5":
   version: 7.14.5
   resolution: "@babel/plugin-proposal-class-properties@npm:7.14.5"
   dependencies:
@@ -461,7 +461,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-object-rest-spread@npm:^7.14.7, @babel/plugin-proposal-object-rest-spread@npm:^7.15.6":
+"@babel/plugin-proposal-object-rest-spread@npm:7.15.6, @babel/plugin-proposal-object-rest-spread@npm:^7.15.6":
   version: 7.15.6
   resolution: "@babel/plugin-proposal-object-rest-spread@npm:7.15.6"
   dependencies:
@@ -1173,7 +1173,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:^7.12.1, @babel/preset-env@npm:^7.15.4":
+"@babel/preset-env@npm:7.15.6, @babel/preset-env@npm:^7.12.1":
   version: 7.15.6
   resolution: "@babel/preset-env@npm:7.15.6"
   dependencies:
@@ -3143,7 +3143,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-loader@npm:^8.2.2":
+"babel-loader@npm:8.2.2":
   version: 8.2.2
   resolution: "babel-loader@npm:8.2.2"
   dependencies:
@@ -3326,10 +3326,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "boilerplate@workspace:."
   dependencies:
-    "@babel/core": ^7.15.5
-    "@babel/plugin-proposal-class-properties": ^7.14.5
-    "@babel/plugin-proposal-object-rest-spread": ^7.14.7
-    "@babel/preset-env": ^7.15.4
+    "@babel/core": 7.15.5
+    "@babel/plugin-proposal-class-properties": 7.14.5
+    "@babel/plugin-proposal-object-rest-spread": 7.15.6
+    "@babel/preset-env": 7.15.6
     "@svgr/webpack": 5.5.0
     "@types/jest": 27.0.1
     "@types/node": 16.9.1
@@ -3338,7 +3338,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^4.30.0
     "@typescript-eslint/parser": ^4.30.0
     autoprefixer: 10.3.4
-    babel-loader: ^8.2.2
+    babel-loader: 8.2.2
     clean-webpack-plugin: 4.0.0
     cross-env: 7.0.3
     css-loader: 6.2.0
