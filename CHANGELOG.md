@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.7.1](https://github.com/sabertazimi/boilerplate/compare/v2.7.0...v2.7.1) (2021-09-12)
+
+
+### :wrench: Testing
+
+* **template-Particle:** add mocks for canvas function ([757b3ed](https://github.com/sabertazimi/boilerplate/commit/757b3ed95d9b6d59b4dac6df2f26e199507bf219))
+
+
+### :bug: Bug Fixes
+
+* **template-canvas:** save context before new draw ([a92e2e4](https://github.com/sabertazimi/boilerplate/commit/a92e2e40ce63658d08efc9119809eddc1b5c7963))
+* **tsconfig:** exclude testing files ([f09e986](https://github.com/sabertazimi/boilerplate/commit/f09e986955352c97176cde18bed5bfcf516a8e93))
+* **webpack-profile:** disable ugly functions when profiling ([b9b471d](https://github.com/sabertazimi/boilerplate/commit/b9b471d465bdc896f9e81c41dcaf9af1892f3323))
+* **webpack:** add `devServer` types for VSCode intellisense ([8a2be17](https://github.com/sabertazimi/boilerplate/commit/8a2be171b7e304d82cbea3fed068b128af414c47))
+* **webpack:** setup `mode` and `devServer` configuration ([37f6608](https://github.com/sabertazimi/boilerplate/commit/37f660839908d1a4a2c7f94be62ef6aa79133eda))
+
+
+### :rocket: Building Work
+
+* **CI-CodeQL:** add CodeQL analysis ([8184f16](https://github.com/sabertazimi/boilerplate/commit/8184f1618c7a6cc6db7fbc0238810141a95e6297))
+* **deps-bot:** add renovate.json ([#98](https://github.com/sabertazimi/boilerplate/issues/98)) ([e39d59d](https://github.com/sabertazimi/boilerplate/commit/e39d59dea41dd0ba40b662bf65c1984f1cee9839))
+* **deps-bot:** setup renovate bot configuration ([c49b38a](https://github.com/sabertazimi/boilerplate/commit/c49b38a3be2cab730d1e21da3ea809b004113feb))
+* **deps:** add missing peer deps ([6d00148](https://github.com/sabertazimi/boilerplate/commit/6d00148cff47d71c58ad2db3437b44fc55963191))
+* **scripts:** rectify stylelint path matching ([5672c6b](https://github.com/sabertazimi/boilerplate/commit/5672c6b0edfd4859dae069aaa628fa8ceaf1db24))
+* **yarn:** ship to yarn berry ([e925cf1](https://github.com/sabertazimi/boilerplate/commit/e925cf1f1504cbc01fc436c098d78e386c72ca96))
+
 ## [2.7.0](https://github.com/sabertazimi/boilerplate/compare/v2.6.0...v2.7.0) (2021-09-06)
 
 
