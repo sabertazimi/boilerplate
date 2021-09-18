@@ -3366,7 +3366,7 @@ __metadata:
     standard-version: ^9.3.1
     style-loader: ^3.2.1
     stylelint: ^13.13.1
-    stylelint-config-bod: ^5.3.6
+    stylelint-config-bod: ^5.3.8
     stylelint-config-prettier: ^8.0.2
     stylelint-prettier: ^1.2.0
     stylelint-webpack-plugin: ^3.0.1
@@ -11068,7 +11068,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"stylelint-config-bod@npm:^5.3.6":
+"stylelint-config-bod@npm:^5.3.8":
   version: 5.3.8
   resolution: "stylelint-config-bod@npm:5.3.8"
   dependencies:
