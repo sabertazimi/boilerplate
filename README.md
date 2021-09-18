@@ -5,7 +5,7 @@
 [![Code Lines](https://img.shields.io/tokei/lines/github/sabertazimi/boilerplate?style=for-the-badge&logo=visualstudiocode)](https://github.com/sabertazimi/boilerplate)
 
 [![CI](https://img.shields.io/github/workflow/status/sabertazimi/boilerplate/CI/main?style=for-the-badge&logo=github)](https://github.com/sabertazimi/boilerplate/actions/workflows/ci.yml)
-[![Jest Coverage](https://img.shields.io/coveralls/github/sabertazimi/boilerplate?logo=coveralls&style=for-the-badge)](https://coveralls.io/github/sabertazimi/boilerplate)
+[![Jest Coverage](https://img.shields.io/codecov/c/github/sabertazimi/boilerplate?logo=codecov&style=for-the-badge)](https://codecov.io/gh/sabertazimi/boilerplate)
 [![Jest Coverage](https://raw.githubusercontents.com/sabertazimi/boilerplate/gh-pages/coverage-lines.svg)](https://github.com/sabertazimi/boilerplate/actions/workflows/ci.yml)
 
 > Minimal web boilerplate.
