@@ -33,6 +33,7 @@
     "url": "https://github.com/sabertazimi/boilerplate/issues"
   },
   "homepage": "https://github.com/sabertazimi/boilerplate",
+  "packageManager": "yarn@3.0.2",
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/plugin-proposal-class-properties": "^7.14.5",
