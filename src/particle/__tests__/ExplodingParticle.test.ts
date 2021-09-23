@@ -1,21 +1,31 @@
 import ExplodingParticle from '../ExplodingParticle';
 
 describe('ExplodingParticle', () => {
+  let mockContextFunctions: object;
+  let mockContextProps: object;
   let mockContext: CanvasRenderingContext2D;
 
   beforeEach(() => {
-    mockContext = {
+    mockContextFunctions = {
       save: jest.fn(),
       restore: jest.fn(),
       beginPath: jest.fn(),
       closePath: jest.fn(),
       arc: jest.fn(),
       fill: jest.fn(),
+    };
+    mockContextProps = {
       fillStyle: '',
+    };
+    mockContext = {
+      ...mockContextFunctions,
+      ...mockContextProps,
     } as unknown as CanvasRenderingContext2D;
   });
 
   afterEach(() => {
+    mockContextFunctions = {};
+    mockContextProps = {};
     mockContext = {} as unknown as CanvasRenderingContext2D;
   });
 
@@ -55,10 +65,8 @@ describe('ExplodingParticle', () => {
     particle.draw(mockContext);
     expect(particle.startX).toBe(3);
     expect(particle.startY).toBe(-2);
-    Object.values(mockContext).forEach(mockFunction => {
-      if (typeof mockFunction === 'function') {
-        expect(mockFunction).toHaveBeenCalledTimes(2);
-      }
+    Object.values(mockContextFunctions).forEach(mockFunction => {
+      expect(mockFunction).toHaveBeenCalledTimes(2);
     });
   });
 
@@ -74,10 +82,8 @@ describe('ExplodingParticle', () => {
     expect(particle.radius).toBe(0.75);
     particle.draw(mockContext);
     expect(particle.radius).toBe(0.5);
-    Object.values(mockContext).forEach(mockFunction => {
-      if (typeof mockFunction === 'function') {
-        expect(mockFunction).toHaveBeenCalledTimes(3);
-      }
+    Object.values(mockContextFunctions).forEach(mockFunction => {
+      expect(mockFunction).toHaveBeenCalledTimes(3);
     });
   });
 
@@ -101,10 +107,8 @@ describe('ExplodingParticle', () => {
     expect(particle.startX).toBe(1);
     expect(particle.startY).toBe(1);
     expect(particle.radius).toBe(0);
-    Object.values(mockContext).forEach(mockFunction => {
-      if (typeof mockFunction === 'function') {
-        expect(mockFunction).toHaveBeenCalledTimes(1);
-      }
+    Object.values(mockContextFunctions).forEach(mockFunction => {
+      expect(mockFunction).toHaveBeenCalledTimes(1);
     });
   });
 });
