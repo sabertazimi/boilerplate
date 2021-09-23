@@ -50,7 +50,7 @@ class ParticleSystem {
 
   handleClick(): void {
     // bind click event to screen canvas
-    this.screenCanvas.addEventListener('click', (event) => {
+    this.screenCanvas.addEventListener('click', event => {
       const x = event.clientX;
       const y = event.clientY;
       const getRandomInt = (min: number, max: number) => () =>

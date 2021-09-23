@@ -55,7 +55,7 @@ describe('ExplodingParticle', () => {
     particle.draw(mockContext);
     expect(particle.startX).toBe(3);
     expect(particle.startY).toBe(-2);
-    Object.values(mockContext).forEach((mockFunction) => {
+    Object.values(mockContext).forEach(mockFunction => {
       if (typeof mockFunction === 'function') {
         expect(mockFunction).toHaveBeenCalledTimes(2);
       }
@@ -74,7 +74,7 @@ describe('ExplodingParticle', () => {
     expect(particle.radius).toBe(0.75);
     particle.draw(mockContext);
     expect(particle.radius).toBe(0.5);
-    Object.values(mockContext).forEach((mockFunction) => {
+    Object.values(mockContext).forEach(mockFunction => {
       if (typeof mockFunction === 'function') {
         expect(mockFunction).toHaveBeenCalledTimes(3);
       }
@@ -101,7 +101,7 @@ describe('ExplodingParticle', () => {
     expect(particle.startX).toBe(1);
     expect(particle.startY).toBe(1);
     expect(particle.radius).toBe(0);
-    Object.values(mockContext).forEach((mockFunction) => {
+    Object.values(mockContext).forEach(mockFunction => {
       if (typeof mockFunction === 'function') {
         expect(mockFunction).toHaveBeenCalledTimes(1);
       }
