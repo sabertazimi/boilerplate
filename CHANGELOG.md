@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.8.0](https://github.com/sabertazimi/boilerplate/compare/v2.7.1...v2.8.0) (2021-09-23)
+
+
+### :bug: Bug Fixes
+
+* **template-test:** remove conditional expect statement ([70ce24a](https://github.com/sabertazimi/boilerplate/commit/70ce24ac911ea43da75f6557ada0dc7f627b8c59))
+
+
+### :sparkles: Features
+
+* **linter:** add `[@dg-scripts](https://github.com/dg-scripts)` linter configuration ([475c01a](https://github.com/sabertazimi/boilerplate/commit/475c01a09eea476e0b1f8c9d9b8bc44e0e2d3ac9))
+
+
+### :rocket: Building Work
+
+* **CI:** add multiple environment for building ([c17a176](https://github.com/sabertazimi/boilerplate/commit/c17a17625942cdf57872c28a03e57fe165ed90a0))
+* **CI:** add multiple environment for testing ([544e6ec](https://github.com/sabertazimi/boilerplate/commit/544e6ec853db1b206c85e8076ac98d2ecae3d1e4))
+* **CI:** switch `coveralls` to `codecov` ([af04e9b](https://github.com/sabertazimi/boilerplate/commit/af04e9b4c102fcfbca2b52fbed7826130e7a2fed))
+* **deps-bot:** change PR concurrent limits ([bc18455](https://github.com/sabertazimi/boilerplate/commit/bc184557bbc7c019c3105d10109d631bdf179e91))
+* **deps-bot:** enable non-major deps automerge ([b70d62e](https://github.com/sabertazimi/boilerplate/commit/b70d62e0e29479e71bfe3079a7ece401f94a5a21))
+* **deps-bot:** setup renovate bot configuration ([88fb53f](https://github.com/sabertazimi/boilerplate/commit/88fb53f059edaecd9d9c5a53954fd68fd1c8c327))
+* **deps-bot:** widen peerDeps and engines ([e427f47](https://github.com/sabertazimi/boilerplate/commit/e427f47b3dd951a430e2bcbe4452e336389b20d1))
+* **deps-dev:** bump `[@dg-scripts](https://github.com/dg-scripts)` to latest version ([7441aa4](https://github.com/sabertazimi/boilerplate/commit/7441aa4983804836a0ba3fbfa72e34d219a2f2e3))
+
 ### [2.7.1](https://github.com/sabertazimi/boilerplate/compare/v2.7.0...v2.7.1) (2021-09-12)
 
 
