@@ -3275,7 +3275,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.3.4":
+"autoprefixer@npm:^10.3.5":
   version: 10.3.5
   resolution: "autoprefixer@npm:10.3.5"
   dependencies:
@@ -3578,7 +3578,7 @@ __metadata:
     "@types/node": ^16.9.1
     "@types/node-fetch": ^2.5.12
     "@types/webpack-dev-server": ^4.1.0
-    autoprefixer: ^10.3.4
+    autoprefixer: ^10.3.5
     babel-loader: ^8.2.2
     clean-webpack-plugin: ^4.0.0
     cross-env: ^7.0.3
