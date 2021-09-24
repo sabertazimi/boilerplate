@@ -3592,7 +3592,7 @@ __metadata:
     html-webpack-plugin: ^5.3.2
     jest: ^27.2.1
     mini-css-extract-plugin: ^2.3.0
-    node-fetch: ^2.6.2
+    node-fetch: ^2.6.5
     postcss: ^8.3.6
     postcss-loader: ^6.1.1
     prettier: ^2.4.1
@@ -9030,7 +9030,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^2.6.2":
+"node-fetch@npm:^2.6.5":
   version: 2.6.5
   resolution: "node-fetch@npm:2.6.5"
   dependencies:
