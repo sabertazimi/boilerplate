@@ -3602,7 +3602,7 @@ __metadata:
     stylelint: ^13.13.1
     stylelint-webpack-plugin: ^3.0.1
     ts-jest: ^27.0.5
-    ts-loader: ^9.2.5
+    ts-loader: ^9.2.6
     ts-node: ^10.2.1
     tsconfig-paths-webpack-plugin: ^3.5.1
     tslib: ^2.3.1
@@ -12183,7 +12183,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"ts-loader@npm:^9.2.5":
+"ts-loader@npm:^9.2.6":
   version: 9.2.6
   resolution: "ts-loader@npm:9.2.6"
   dependencies:
