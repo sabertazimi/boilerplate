@@ -43,7 +43,7 @@
     "@dg-scripts/stylelint-config": "^1.1.1",
     "@svgr/webpack": "^5.5.0",
     "@types/jest": "^27.0.2",
-    "@types/node": "^16.9.1",
+    "@types/node": "^16.10.1",
     "@types/node-fetch": "^2.5.12",
     "@types/webpack-dev-server": "^4.1.0",
     "autoprefixer": "^10.3.5",
