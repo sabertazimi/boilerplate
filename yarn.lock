@@ -2367,9 +2367,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:^16.9.1":
-  version: 16.9.6
-  resolution: "@types/node@npm:16.9.6"
-  checksum: 1c11ff4b58af87ddade05784e90bb5a2fe01f461ce489fdb1428d89e709695a26b0dcbac0520305911f5e4017561416747e544f1b9ec36649ccbfad6ffff4a0a
+  version: 16.10.1
+  resolution: "@types/node@npm:16.10.1"
+  checksum: 84d7f082e9421fdf1f08dbe00b66848897b2675eacc94a4fa445c4d34cef57c901ecd3276d03ebe110607a848d3df0ab33816aeff51a234e036111dd8ef1422f
   languageName: node
   linkType: hard
 
@@ -2388,9 +2388,9 @@ __metadata:
   linkType: hard
 
 "@types/prettier@npm:^2.1.5":
-  version: 2.3.2
-  resolution: "@types/prettier@npm:2.3.2"
-  checksum: c4313e16650811f47b07a0fa7ac0742e966f61283a7292eb667fd4626d760bf3b7d896be3eaabb3354ad45fdbe3a340299b018dd3bcce1ff753d030a8cd2479c
+  version: 2.4.0
+  resolution: "@types/prettier@npm:2.4.0"
+  checksum: f7128dc36e68906c9316c7d284b29561c6aa294e9b04d860ab41ebb9734080fdcbbedb42dd1bfa45ed72f9b34e28233d8e2e98c715b31b333d31f77da3dcad01
   languageName: node
   linkType: hard
 
@@ -3294,19 +3294,19 @@ __metadata:
   linkType: hard
 
 "autoprefixer@npm:^9.8.6":
-  version: 9.8.6
-  resolution: "autoprefixer@npm:9.8.6"
+  version: 9.8.7
+  resolution: "autoprefixer@npm:9.8.7"
   dependencies:
     browserslist: ^4.12.0
     caniuse-lite: ^1.0.30001109
-    colorette: ^1.2.1
+    nanocolors: ^0.2.8
     normalize-range: ^0.1.2
     num2fraction: ^1.2.2
     postcss: ^7.0.32
     postcss-value-parser: ^4.1.0
   bin:
     autoprefixer: bin/autoprefixer
-  checksum: 46987bc3de6612f0276c3643061901e33cc5721d07aaeb6f0daf237554448884a59c0b17087bf0f00a07d940abcb5a6eaf2203b962c24fe33d52f76aa845cb70
+  checksum: d9c6cb1ee3497f6f9346e0ea8619a8bc85844cd7ec6a86dcd6e9f8d29eed2b1a7c80135852af53b2380fb8347cc5b080ea77c294faae707e799e7b9025a40e70
   languageName: node
   linkType: hard
 
@@ -4064,7 +4064,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"colorette@npm:^1.2.1, colorette@npm:^1.4.0":
+"colorette@npm:^1.2.1":
   version: 1.4.0
   resolution: "colorette@npm:1.4.0"
   checksum: 01c3c16058b182a4ab4c126a65a75faa4d38a20fa7c845090b25453acec6c371bb2c5dceb0a2338511f17902b9d1a9af0cadd8509c9403894b79311032c256c3
@@ -4072,9 +4072,9 @@ __metadata:
   linkType: hard
 
 "colorette@npm:^2.0.10":
-  version: 2.0.10
-  resolution: "colorette@npm:2.0.10"
-  checksum: a8d6b709b0e1e5fd42eb91622729521d72cfbb10577b396f7499ea134d7c7be15ec006e3a64d5d9aca19ad2715a31e1e2b743ac8a9c02b687e8ba59d91de9666
+  version: 2.0.12
+  resolution: "colorette@npm:2.0.12"
+  checksum: 1df990c6749826694756ecd05a771fb70fd426cf2b264cf496fb93a621fb4554fabfa8adde0923421f3e38b7265d546f6a46caf833f2d7facf45a40042b510b3
   languageName: node
   linkType: hard
 
@@ -5186,9 +5186,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.3.846":
-  version: 1.3.848
-  resolution: "electron-to-chromium@npm:1.3.848"
-  checksum: 2296ca25b31fcf6ab013652ab18b53772921ed0969ef19073d93da23bb18294069aea404dbcba3abffbadff9ad82159051e179e1b68715267d24a02fc269172b
+  version: 1.3.850
+  resolution: "electron-to-chromium@npm:1.3.850"
+  checksum: 55d4bea34359a69b5f42cb6d5c6ee7bb29c8d0d1dafd8adfc828f2a984fbe8db704703b16f4536f1f702f255c17798cc5a0c509f6375bc766c0253618aa00d9f
   languageName: node
   linkType: hard
 
@@ -8990,7 +8990,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanocolors@npm:^0.1.0, nanocolors@npm:^0.1.5":
+"nanocolors@npm:^0.1.0, nanocolors@npm:^0.1.12, nanocolors@npm:^0.1.5":
   version: 0.1.12
   resolution: "nanocolors@npm:0.1.12"
   checksum: 2ce58f57006ddd1d2680d05fe21f54d858db8ba81bd13381598ddc546f7637e33c4407da2ea7da40ea1c96794250e7c14a4d00358b48eeae4d917d6a92bafe4c
@@ -8998,18 +8998,18 @@ __metadata:
   linkType: hard
 
 "nanocolors@npm:^0.2.2, nanocolors@npm:^0.2.8":
-  version: 0.2.8
-  resolution: "nanocolors@npm:0.2.8"
-  checksum: c921beed5dea0ec155688d6260fd59f0c8c3073ca3a1cb944489fcaea5f60e22f052db518bf985b230bb38f4fc7258a7b72902fc07522a1aecfb14d37f7ab08b
+  version: 0.2.9
+  resolution: "nanocolors@npm:0.2.9"
+  checksum: f68054fe30942b46b547ebf0a9479ce65387a26781dd30d02c403a333a54f8ae6360f9b9b0c3fd13a13d28c70f373021e75e77b14dbc8953008536597d096bb6
   languageName: node
   linkType: hard
 
 "nanoid@npm:^3.1.25":
-  version: 3.1.25
-  resolution: "nanoid@npm:3.1.25"
+  version: 3.1.28
+  resolution: "nanoid@npm:3.1.28"
   bin:
     nanoid: bin/nanoid.cjs
-  checksum: e2353828c7d8fde65265e9c981380102e2021f292038a93fd27288bad390339833286e8cbc7531abe1cb2c6b317e55f38b895dcb775151637bb487388558e0ff
+  checksum: ae2fa9f3ce7a690ec62fc2fdf92345f023b20db760024f767c25ad392bde6414dc0b44a8e66dc1209426f36e4771e63b09ad2b49d8f1b04063b37e21b46af8d0
   languageName: node
   linkType: hard
 
@@ -10269,13 +10269,12 @@ __metadata:
   linkType: hard
 
 "postcss@npm:7.x.x, postcss@npm:^7.0.14, postcss@npm:^7.0.17, postcss@npm:^7.0.2, postcss@npm:^7.0.21, postcss@npm:^7.0.26, postcss@npm:^7.0.31, postcss@npm:^7.0.32, postcss@npm:^7.0.35, postcss@npm:^7.0.6":
-  version: 7.0.36
-  resolution: "postcss@npm:7.0.36"
+  version: 7.0.38
+  resolution: "postcss@npm:7.0.38"
   dependencies:
-    chalk: ^2.4.2
+    nanocolors: ^0.2.2
     source-map: ^0.6.1
-    supports-color: ^6.1.0
-  checksum: 4cfc0989b9ad5d0e8971af80d87f9c5beac5c84cb89ff22ad69852edf73c0a2fa348e7e0a135b5897bf893edad0fe86c428769050431ad9b532f072ff530828d
+  checksum: 737ba0355721880532167d3fbdc580a5ba95a5398b86f3ace610eff99aa11f3c32eb8eac0cfd8ea201a5372f43af3ed7bb6e7643263956fe1d36e927aaf3c4d4
   languageName: node
   linkType: hard
 
@@ -11824,15 +11823,6 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"supports-color@npm:^6.1.0":
-  version: 6.1.0
-  resolution: "supports-color@npm:6.1.0"
-  dependencies:
-    has-flag: ^3.0.0
-  checksum: 74358f9535c83ee113fbaac354b11e808060f6e7d8722082ee43af3578469134e89d00026dce2a6b93ce4e5b89d0e9a10f638b2b9f64c7838c2fb2883a47b3d5
-  languageName: node
-  linkType: hard
-
 "supports-color@npm:^7.0.0, supports-color@npm:^7.1.0":
   version: 7.2.0
   resolution: "supports-color@npm:7.2.0"
@@ -11899,19 +11889,19 @@ resolve@^2.0.0-next.3:
   linkType: hard
 
 "svgo@npm:^2.3.0":
-  version: 2.6.1
-  resolution: "svgo@npm:2.6.1"
+  version: 2.7.0
+  resolution: "svgo@npm:2.7.0"
   dependencies:
     "@trysound/sax": 0.2.0
-    colorette: ^1.4.0
     commander: ^7.2.0
     css-select: ^4.1.3
     css-tree: ^1.1.3
     csso: ^4.2.0
+    nanocolors: ^0.1.12
     stable: ^0.1.8
   bin:
     svgo: bin/svgo
-  checksum: 1946a28b96868464fdfd6758b5d9bf773b589da27f2b9cad4879cd4e924517f7bf20ae91ca10607ce3bfe0fabe8bcfe39ae3d6243ac16cf1c1b3239c87a44ca3
+  checksum: 7da6574958185368356d1e0f50d7860afc01d9fffb0f75c8aab87d1af237d27d8a838c7f09e6829a0e81b1952cf6c4e12abe1bd3920a526ea0f0ca9dd1cd59c5
   languageName: node
   linkType: hard
 
