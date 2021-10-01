@@ -1545,17 +1545,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dg-scripts/stylelint-config@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "@dg-scripts/stylelint-config@npm:1.1.2"
+"@dg-scripts/stylelint-config@npm:^1.1.3":
+  version: 1.1.3
+  resolution: "@dg-scripts/stylelint-config@npm:1.1.3"
   dependencies:
-    stylelint-config-bod: ^5.3.11
+    stylelint-config-bod: ^5.3.12
     stylelint-config-prettier: ^8.0.2
     stylelint-prettier: ^1.2.0
   peerDependencies:
     prettier: ^2.4.0
     stylelint: ^13.13.0
-  checksum: fdfc538d77037ddbb7a7eb9efa689c08f2221dc197e03b2adc32ec749d0f661a1e4b7becec06500e8cc8e150b13ad0ccaf7f6ae2f35dbe5e8182676e693c463c
+  checksum: dd3baf772ce511cccdabfccbf83d9fc90820988816dc1e315cccf351ac34074684d28de92594981b0616f8410eba5867e0b3ad47906b00d2adbcb585280330ce
   languageName: node
   linkType: hard
 
@@ -3572,7 +3572,7 @@ __metadata:
     "@babel/plugin-proposal-object-rest-spread": ^7.15.6
     "@babel/preset-env": ^7.15.6
     "@dg-scripts/eslint-config": ^1.1.2
-    "@dg-scripts/stylelint-config": ^1.1.2
+    "@dg-scripts/stylelint-config": ^1.1.3
     "@svgr/webpack": ^5.5.0
     "@types/jest": ^27.0.2
     "@types/node": ^16.9.1
@@ -11649,16 +11649,16 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"stylelint-config-bod@npm:^5.3.11":
-  version: 5.3.11
-  resolution: "stylelint-config-bod@npm:5.3.11"
+"stylelint-config-bod@npm:^5.3.12":
+  version: 5.3.12
+  resolution: "stylelint-config-bod@npm:5.3.12"
   dependencies:
     stylelint-a11y: ^1.2.3
     stylelint-config-recess-order: ^2.5.0
     stylelint-config-standard: ^22.0.0
   peerDependencies:
     stylelint: ^13.13.0
-  checksum: 212379f6a0fe5dc4fdf0e68e225d0db433370c6ac81ab8a14bcf10d3d4f4d1ef05c16be7bc7f908868e2bba967083f156945b9da0f4f27c7c3ec2c5a501e5ce7
+  checksum: a287295de258506f8eaf56800345fb605f48150336d718ccdd5d59ad5f9870fe1901a71786ea125773f0dedc597bad2b127a20f6f0aaf5e74edf4a0edfdc6002
   languageName: node
   linkType: hard
 
