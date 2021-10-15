@@ -16,6 +16,8 @@
 git clone --depth=1 https://github.com/sabertazimi/boilerplate myApp
 ```
 
+## Usage
+
 ```bash
 cd myApp
 npm i
@@ -33,16 +35,16 @@ on repo [Bod](https://github.com/sabertazimi/bod).
 
 ## Features
 
-- **TypeScript** ready. Robust type checking.
-- **Babel** transpile support.
-- **Webpack** for hot reload development and dedicated building work
+- `TypeScript` ready. Robust type checking.
+- `Babel` transpile support.
+- `Webpack` for hot reload development and dedicated building work
   with bundle analysis and elegant progressbar.
-- **Jest** and **Testing Library** for robust unit tests and detailed coverage report.
-- **PostCSS** for CSS auto-prefixer support.
-- **ESLint** with TypeScript parser for TypeScript style check.
-- **StyleLint** with custom rules for CSS style check.
-- **Prettier** for format TypeScript and CSS code elegantly.
-- Convenient version release with **Standard Version**.
+- `Jest` and `Testing Library` for robust unit tests and detailed coverage report.
+- `PostCSS` for CSS auto-prefixer support.
+- `ESLint` with TypeScript parser for TypeScript style check.
+- `StyleLint` with custom rules for CSS style check.
+- `Prettier` for format TypeScript and CSS code elegantly.
+- Convenient version release with `Standard Version`.
 
 ## React Support
 
