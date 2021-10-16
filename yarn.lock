@@ -3622,7 +3622,7 @@ __metadata:
     typescript: ^4.4.4
     url-loader: ^4.1.1
     webpack: ^5.58.2
-    webpack-bundle-analyzer: ^4.4.2
+    webpack-bundle-analyzer: ^4.5.0
     webpack-cli: ^4.9.0
     webpack-dev-server: ^4.3.1
     webpackbar: ^5.0.0-3
@@ -12737,7 +12737,7 @@ typescript@^4.4.4:
   languageName: node
   linkType: hard
 
-"webpack-bundle-analyzer@npm:^4.4.2":
+"webpack-bundle-analyzer@npm:^4.5.0":
   version: 4.5.0
   resolution: "webpack-bundle-analyzer@npm:4.5.0"
   dependencies:
