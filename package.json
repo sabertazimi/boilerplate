@@ -20,7 +20,7 @@
     "url": "https://github.com/sabertazimi/boilerplate/issues"
   },
   "homepage": "https://github.com/sabertazimi/boilerplate",
-  "packageManager": "yarn@3.0.2",
+  "packageManager": "yarn@3.1.0",
   "scripts": {
     "badge": "ts-node scripts/badge.ts",
     "build": "cross-env NODE_ENV=production webpack",
