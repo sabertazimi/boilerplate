@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.9.0](https://github.com/sabertazimi/boilerplate/compare/v2.8.0...v2.9.0) (2021-10-27)
+
+
+### :bug: Bug Fixes
+
+* **deps:** bump `dg-scripts/*` to 5.5.0 ([c006367](https://github.com/sabertazimi/boilerplate/commit/c006367dcc8022c1525f956c7517dba48fefbbc6))
+* **deps:** bump eslint to v8 ([369c46c](https://github.com/sabertazimi/boilerplate/commit/369c46c1f5b61118babc654db2b556b100a427a2))
+* **deps:** bump linter configuration to 5.5.3 ([f0f9781](https://github.com/sabertazimi/boilerplate/commit/f0f978185e7308e8d8a55c39c5e6de75fedaf053))
+
+
+### :rocket: Building Work
+
+* **deps-bot:** remove GitHub dependabot ([263fea6](https://github.com/sabertazimi/boilerplate/commit/263fea6e8ccd806484bad15b197cfcdd773f3734))
+* **deps-dev:** bump `@dg-scripts/*` to 1.1.1 ([6740697](https://github.com/sabertazimi/boilerplate/commit/674069747c8d3b2bafc069ca0475819f9ffe3a08))
+* **deps:** bundle bod deps into single PR ([daaf06a](https://github.com/sabertazimi/boilerplate/commit/daaf06afd436dbaa44ee2ebb2ebf8c8e913388e6))
+* **lint:** disable auto-fix for linter ([df24f40](https://github.com/sabertazimi/boilerplate/commit/df24f40088cb38eae8a3ad91030c8f77916246c5))
+* **yarn:** bump yarn from v3.0.2 to v3.1.0 ([348211b](https://github.com/sabertazimi/boilerplate/commit/348211b810650de13f4d6e8c8db911ea96355e4b))
+
+
+### :sparkles: Features
+
+* **sass:** ship to `dart-sass`, drop `node-sass` ([1e4294a](https://github.com/sabertazimi/boilerplate/commit/1e4294a9532945ab665654cb9845f0c13928d135))
+
 ## [2.8.0](https://github.com/sabertazimi/boilerplate/compare/v2.7.1...v2.8.0) (2021-09-23)
 
 
