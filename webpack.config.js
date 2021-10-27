@@ -16,7 +16,7 @@ const isEnvDevelopment = process.env.NODE_ENV === 'development';
 const isEnvProduction = process.env.NODE_ENV === 'production';
 const isEnvProductionProfile =
   isEnvProduction && process.argv.includes('--profile');
-const useSass = Boolean(packageJson.devDependencies['node-sass']);
+const useSass = Boolean(packageJson.devDependencies['sass']);
 const imageInlineSizeLimit = parseInt(
   process.env.IMAGE_INLINE_SIZE_LIMIT || '10000'
 );

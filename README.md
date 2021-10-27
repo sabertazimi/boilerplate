@@ -60,7 +60,7 @@ npm i -D @testing-library/react @testing-library/react-hooks
 ## Sass Support
 
 ```bash
-npm i -D node-sass @types/node-sass
+npm i -D sass @types/sass
 ```
 
 ## Contact
