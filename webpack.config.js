@@ -102,21 +102,22 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: '@svgr/webpack',
+            loader: require.resolve('@svgr/webpack'),
             options: {
               prettier: false,
               svgo: false,
               svgoConfig: {
-                plugins: [{ removeViewBox: false }],
+                plugins: [{
+                  name: 'preset-default',
+                  params: {
+                    overrides: {
+                      removeViewBox: false,
+                    },
+                  },
+                }],
               },
               titleProp: true,
               ref: true,
-            },
-          },
-          {
-            loader: 'file-loader',
-            options: {
-              name: 'static/media/[name].[hash].[ext]',
             },
           },
         ],
