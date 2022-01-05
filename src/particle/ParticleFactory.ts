@@ -1,4 +1,5 @@
-import ExplodingParticle, { ParticleProps } from './ExplodingParticle';
+import type { ParticleProps } from './ExplodingParticle';
+import ExplodingParticle from './ExplodingParticle';
 
 class ParticleFactory {
   particles: ExplodingParticle[];

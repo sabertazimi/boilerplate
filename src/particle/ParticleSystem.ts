@@ -1,4 +1,4 @@
-import { ParticleProps } from './ExplodingParticle';
+import type { ParticleProps } from './ExplodingParticle';
 import ParticleFactory from './ParticleFactory';
 
 class ParticleSystem {
