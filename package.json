@@ -45,7 +45,7 @@
     "@types/jest": "^27.4.0",
     "@types/node": "^16.11.19",
     "@types/node-fetch": "^2.5.12",
-    "@types/webpack-dev-server": "^4.5.1",
+    "@types/webpack-dev-server": "^4.7.1",
     "autoprefixer": "^10.4.2",
     "babel-loader": "^8.2.3",
     "clean-webpack-plugin": "^4.0.0",
