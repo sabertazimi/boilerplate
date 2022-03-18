@@ -45,7 +45,7 @@
     "@types/jest": "^27.4.1",
     "@types/node": "^16.11.26",
     "@types/webpack-dev-server": "^4.7.1",
-    "autoprefixer": "^10.4.2",
+    "autoprefixer": "^10.4.4",
     "babel-loader": "^8.2.3",
     "clean-webpack-plugin": "^4.0.0",
     "cross-env": "^7.0.3",
