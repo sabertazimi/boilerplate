@@ -16,7 +16,7 @@ const isEnvDevelopment = process.env.NODE_ENV === 'development';
 const isEnvProduction = process.env.NODE_ENV === 'production';
 const isEnvProductionProfile =
   isEnvProduction && process.argv.includes('--profile');
-const useSass = Boolean(packageJson.devDependencies['sass']);
+const useSass = Boolean(packageJson.devDependencies.sass);
 const imageInlineSizeLimit = parseInt(
   process.env.IMAGE_INLINE_SIZE_LIMIT || '10000'
 );
@@ -107,14 +107,16 @@ module.exports = {
               prettier: false,
               svgo: false,
               svgoConfig: {
-                plugins: [{
-                  name: 'preset-default',
-                  params: {
-                    overrides: {
-                      removeViewBox: false,
+                plugins: [
+                  {
+                    name: 'preset-default',
+                    params: {
+                      overrides: {
+                        removeViewBox: false,
+                      },
                     },
                   },
-                }],
+                ],
               },
               titleProp: true,
               ref: true,
@@ -224,4 +226,5 @@ module.exports = {
     type: 'filesystem',
   },
   devtool: isEnvDevelopment ? 'eval-cheap-module-source-map' : false,
+  stats: 'errors-warnings',
 };
