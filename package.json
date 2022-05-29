@@ -21,6 +21,18 @@
   },
   "homepage": "https://github.com/sabertazimi/boilerplate",
   "packageManager": "yarn@3.2.1",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "scripts": {
     "badge": "ts-node scripts/badge.ts",
     "build": "cross-env NODE_ENV=production webpack",
@@ -44,9 +56,7 @@
     "@svgr/webpack": "^6.2.1",
     "@types/jest": "^27.5.1",
     "@types/node": "^16.11.36",
-    "autoprefixer": "^10.4.7",
     "babel-loader": "^8.2.5",
-    "clean-webpack-plugin": "^4.0.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
     "css-minimizer-webpack-plugin": "^4.0.0",
@@ -60,7 +70,9 @@
     "jest-environment-jsdom": "^28.1.0",
     "mini-css-extract-plugin": "^2.6.0",
     "postcss": "^8.4.14",
+    "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-loader": "^7.0.0",
+    "postcss-preset-env": "^7.6.0",
     "prettier": "^2.6.2",
     "sass-loader": "^13.0.0",
     "standard-version": "^9.3.2",

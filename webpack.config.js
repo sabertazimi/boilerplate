@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
@@ -11,12 +10,13 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const WebpackBar = require('webpackbar');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
-const packageJson = require('./package.json');
+const pkg = require('./package.json');
 const isEnvDevelopment = process.env.NODE_ENV === 'development';
 const isEnvProduction = process.env.NODE_ENV === 'production';
 const isEnvProductionProfile =
   isEnvProduction && process.argv.includes('--profile');
-const useSass = Boolean(packageJson.devDependencies.sass);
+const useSass = Boolean(pkg.devDependencies.sass);
+const enableAnalyzer = process.env.ANALYZE === 'true';
 const imageInlineSizeLimit = parseInt(
   process.env.IMAGE_INLINE_SIZE_LIMIT || '10000'
 );
@@ -29,12 +29,15 @@ module.exports = {
   output: {
     filename: isEnvDevelopment ? '[name].js' : '[name].[contenthash].js',
     path: path.resolve(__dirname, 'build'),
+    clean: true,
   },
   mode: isEnvDevelopment ? 'development' : 'production',
   devServer: {
+    static: path.resolve(__dirname, 'build'),
     hot: true,
     open: true,
     port: 2333,
+    watchFiles: ['src/**/*.{html,ts,tsx,js,jsx}'],
   },
   module: {
     rules: [
@@ -140,11 +143,8 @@ module.exports = {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      hash: true,
       template: './src/index.html',
-      filename: './index.html',
     }),
     new MiniCssExtractPlugin({
       filename: isEnvDevelopment ? '[name].css' : '[name].[contenthash].css',
@@ -154,7 +154,7 @@ module.exports = {
       exclude: ['node_modules', 'build', 'dist', 'coverage'],
     }),
     new ESLintPlugin({ extensions: ['tsx', 'ts', 'jsx', 'js'] }),
-    isEnvProduction && new BundleAnalyzerPlugin({ analyzerMode: 'static' }),
+    enableAnalyzer && new BundleAnalyzerPlugin({ analyzerMode: 'static' }),
     new WebpackBar(),
   ].filter(Boolean),
   optimization: {
