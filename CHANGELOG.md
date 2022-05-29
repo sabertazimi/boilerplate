@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.10.0](https://github.com/sabertazimi/boilerplate/compare/v2.9.0...v2.10.0) (2022-05-29)
+
+
+### :rocket: Building Work
+
+* **deps-bot:** disable lockfile maintenance ([7ec6de5](https://github.com/sabertazimi/boilerplate/commit/7ec6de58bae442b106536388739ba0d54b8d44e8))
+
+
+### :bug: Bug Fixes
+
+* **jest-config:** rectify jest utils path ([7a20864](https://github.com/sabertazimi/boilerplate/commit/7a20864df7b9a19d77a4de83f8d90c82f4235922))
+* webpack noise printed only if error or warning ([#349](https://github.com/sabertazimi/boilerplate/issues/349)) ([f2b8571](https://github.com/sabertazimi/boilerplate/commit/f2b857117ed394034889be231635aa8e4184693e))
+* **webpack-svgr:** update svgo configuration for v6 ([43224c2](https://github.com/sabertazimi/boilerplate/commit/43224c22270519e4c8d9672a630efe4cf02b01a6))
+
+
+### :sparkles: Features
+
+* **postcss:** add support for postcss presets ([#376](https://github.com/sabertazimi/boilerplate/issues/376)) ([2110fb6](https://github.com/sabertazimi/boilerplate/commit/2110fb635474dd38654907fe9bff8307b417eef9))
+
 ## [2.9.0](https://github.com/sabertazimi/boilerplate/compare/v2.8.0...v2.9.0) (2021-10-27)
 
 
