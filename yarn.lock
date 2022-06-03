@@ -2548,13 +2548,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^27.5.1":
-  version: 27.5.1
-  resolution: "@types/jest@npm:27.5.1"
+"@types/jest@npm:^28.1.0":
+  version: 28.1.0
+  resolution: "@types/jest@npm:28.1.0"
   dependencies:
     jest-matcher-utils: ^27.0.0
     pretty-format: ^27.0.0
-  checksum: be20e39f7aaf17179109c0060d0a0489cec2034d4e2e28a631284c7ecd13c5ae52f62697a33a0e89b03b6cfe54e9d5e8c2bd387ab2bd90d6071d68c63b86d1e3
+  checksum: be4d887b2452e8c1367cd19b23906ba4b64af95e22ca871f81c7af5e945bd39b370e124086356aa9380c4543123b1387448bc2c00a604c6f0a92bc3e4a24e9ce
   languageName: node
   linkType: hard
 
@@ -3736,7 +3736,7 @@ __metadata:
     "@dg-scripts/eslint-config": ^5.10.0
     "@dg-scripts/stylelint-config": ^5.10.0
     "@svgr/webpack": ^6.2.1
-    "@types/jest": ^27.5.1
+    "@types/jest": ^28.1.0
     "@types/node": ^16.11.36
     babel-loader: ^8.2.5
     cross-env: ^7.0.3
@@ -4377,7 +4377,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-conventionalcommits@npm:4.6.3":
+"conventional-changelog-conventionalcommits@npm:4.6.3, conventional-changelog-conventionalcommits@npm:^4.5.0":
   version: 4.6.3
   resolution: "conventional-changelog-conventionalcommits@npm:4.6.3"
   dependencies:
@@ -4385,17 +4385,6 @@ __metadata:
     lodash: ^4.17.15
     q: ^1.5.1
   checksum: 7b8e8a21ebb56f9aaa510e12917b7c609202072c3e71089e0a09630c37c2e8146cdb04364809839b0e3eb55f807fe84d03b2079500b37f6186d505848be5c562
-  languageName: node
-  linkType: hard
-
-"conventional-changelog-conventionalcommits@npm:^4.5.0":
-  version: 4.6.1
-  resolution: "conventional-changelog-conventionalcommits@npm:4.6.1"
-  dependencies:
-    compare-func: ^2.0.0
-    lodash: ^4.17.15
-    q: ^1.5.1
-  checksum: f866616c8f6f21cea005b42792451bfbd16bd4d82872867d1218f67a7993a53c5d87e26d6b483d9252e8022f2e4570e6cf9fa2a409aae5a3d73eea92ccf78b13
   languageName: node
   linkType: hard
 
