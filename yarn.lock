@@ -3809,7 +3809,7 @@ __metadata:
     postcss-flexbugs-fixes: ^5.0.2
     postcss-loader: ^7.0.1
     postcss-preset-env: ^7.8.3
-    prettier: ^2.7.1
+    prettier: ^2.8.0
     sass-loader: ^13.2.0
     standard-version: ^9.5.0
     style-loader: ^3.3.1
@@ -3821,7 +3821,7 @@ __metadata:
     tsconfig-paths-webpack-plugin: ^4.0.0
     tslib: ^2.4.1
     typescript: ^4.9.3
-    undici: ^5.12.0
+    undici: ^5.13.0
     url-loader: ^4.1.1
     webpack: ^5.75.0
     webpack-bundle-analyzer: ^4.7.0
@@ -10400,12 +10400,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.7.1":
-  version: 2.7.1
-  resolution: "prettier@npm:2.7.1"
+"prettier@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "prettier@npm:2.8.0"
   bin:
     prettier: bin-prettier.js
-  checksum: 55a4409182260866ab31284d929b3cb961e5fdb91fe0d2e099dac92eaecec890f36e524b4c19e6ceae839c99c6d7195817579cdffc8e2c80da0cb794463a748b
+  checksum: 72004ce0cc9bb097daf3e3833f62495768724392c1d5b178dd47372337616e9e50ecbb0804f236596223f7b5eb1bbe69cefc8957dca21112c5777e77ef73a564
   languageName: node
   linkType: hard
 
@@ -12374,12 +12374,12 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"undici@npm:^5.12.0":
-  version: 5.12.0
-  resolution: "undici@npm:5.12.0"
+"undici@npm:^5.13.0":
+  version: 5.13.0
+  resolution: "undici@npm:5.13.0"
   dependencies:
     busboy: ^1.6.0
-  checksum: fbc227704943c05aa3dc1630695e10309c17d0a535678594d136db107c50593248e9ace70e1ab77496a6c837bf14aa2ab3c501a7a6c45fb6277dbf0846e15ffe
+  checksum: 15b8f7df4bd8c9bf9d777456d16b51eb621f25d3ee60f575a8693192a647b3a8b33671e984386636e8df42085488f86a52d0d47db1b8c22edcc591134892a424
   languageName: node
   linkType: hard
 
