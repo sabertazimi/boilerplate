@@ -3906,7 +3906,7 @@ __metadata:
     standard-version: ^9.5.0
     style-loader: ^3.3.1
     stylelint: ^14.16.1
-    stylelint-webpack-plugin: ^3.3.0
+    stylelint-webpack-plugin: ^4.0.0
     ts-jest: ^29.0.5
     ts-loader: ^9.4.2
     ts-node: ^10.9.1
@@ -8128,17 +8128,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-worker@npm:^28.1.0":
-  version: 28.1.3
-  resolution: "jest-worker@npm:28.1.3"
-  dependencies:
-    "@types/node": "*"
-    merge-stream: ^2.0.0
-    supports-color: ^8.0.0
-  checksum: e921c9a1b8f0909da9ea07dbf3592f95b653aef3a8bb0cbcd20fc7f9a795a1304adecac31eecb308992c167e8d7e75c522061fec38a5928ace0f9571c90169ca
-  languageName: node
-  linkType: hard
-
 "jest-worker@npm:^29.1.2, jest-worker@npm:^29.4.1":
   version: 29.4.1
   resolution: "jest-worker@npm:29.4.1"
@@ -11876,19 +11865,19 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"stylelint-webpack-plugin@npm:^3.3.0":
-  version: 3.3.0
-  resolution: "stylelint-webpack-plugin@npm:3.3.0"
+"stylelint-webpack-plugin@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "stylelint-webpack-plugin@npm:4.0.0"
   dependencies:
     globby: ^11.1.0
-    jest-worker: ^28.1.0
+    jest-worker: ^29.4.1
     micromatch: ^4.0.5
     normalize-path: ^3.0.0
     schema-utils: ^4.0.0
   peerDependencies:
     stylelint: ^13.0.0 || ^14.0.0
     webpack: ^5.0.0
-  checksum: 946c0049dab0394960583fe47853b9a9dc97c7b0c9125f5b6bca3f684657ef765c7f66a8b176f88e0834c9332ebd12c798fb653983465413f59843690679a70f
+  checksum: efa099e59b59aa6302012a93990fb7dd57685a8cf3532a86273bb4f4a09f7dce85340d42925c328fa1964374b813f96e91d0e09d536acf98b8e7cf0c6ca938c7
   languageName: node
   linkType: hard
 
