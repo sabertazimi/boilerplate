@@ -21,7 +21,7 @@ jobs:
       - name: Setup Node environment
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
           architecture: x64
           registry-url: https://registry.npmjs.org/
           cache: 'yarn'
@@ -38,7 +38,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
-        node-version: [16]
+        node-version: [18]
         architecture: [x64]
     steps:
       - name: Checkout repository
@@ -62,10 +62,10 @@ jobs:
           yarn badge
       - name: Perform code coverage report action
         uses: codecov/codecov-action@v3
-        if: ${{ matrix.node-version == 16 && matrix.os == 'ubuntu-latest' && matrix.architecture == 'x64' }}
+        if: ${{ matrix.node-version == 18 && matrix.os == 'ubuntu-latest' && matrix.architecture == 'x64' }}
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
-        if: ${{ matrix.node-version == 16 && matrix.os == 'ubuntu-latest' && matrix.architecture == 'x64' }}
+        if: ${{ matrix.node-version == 18 && matrix.os == 'ubuntu-latest' && matrix.architecture == 'x64' }}
         with:
           name: badges
           path: build
@@ -76,7 +76,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
-        node-version: [16]
+        node-version: [18]
         architecture: [x64]
     steps:
       - name: Initialize git configuration
@@ -104,7 +104,7 @@ jobs:
           yarn build
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
-        if: ${{ matrix.node-version == 16 && matrix.os == 'ubuntu-latest' && matrix.architecture == 'x64' }}
+        if: ${{ matrix.node-version == 18 && matrix.os == 'ubuntu-latest' && matrix.architecture == 'x64' }}
         with:
           name: demos
           path: build
