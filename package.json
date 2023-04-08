@@ -85,7 +85,7 @@
     "tsconfig-paths-webpack-plugin": "^4.0.1",
     "tslib": "^2.5.0",
     "typescript": "^5.0.4",
-    "undici": "^5.21.0",
+    "undici": "^5.21.1",
     "url-loader": "^4.1.1",
     "webpack": "^5.78.0",
     "webpack-bundle-analyzer": "^4.8.0",
