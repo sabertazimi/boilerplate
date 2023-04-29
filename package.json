@@ -55,7 +55,7 @@
     "@dg-scripts/stylelint-config": "^5.13.5",
     "@svgr/webpack": "^7.0.0",
     "@types/jest": "^29.5.1",
-    "@types/node": "^18.16.2",
+    "@types/node": "^18.16.3",
     "babel-loader": "^9.1.2",
     "commit-and-tag-version": "^11.2.1",
     "cross-env": "^7.0.3",
