@@ -2156,10 +2156,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:8.50.0":
-  version: 8.50.0
-  resolution: "@eslint/js@npm:8.50.0"
-  checksum: 302478f2acaaa7228729ec6a04f56641590185e1d8cd1c836a6db8a6b8009f80a57349341be9fbb9aa1721a7a569d1be3ffc598a33300d22816f11832095386c
+"@eslint/js@npm:8.51.0":
+  version: 8.51.0
+  resolution: "@eslint/js@npm:8.51.0"
+  checksum: 0228bf1e1e0414843e56d9ff362a2a72d579c078f93174666f29315690e9e30a8633ad72c923297f7fd7182381b5a476805ff04dac8debe638953eb1ded3ac73
   languageName: node
   linkType: hard
 
@@ -3098,10 +3098,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^18.18.1":
-  version: 18.18.1
-  resolution: "@types/node@npm:18.18.1"
-  checksum: 079085afc8615b91727900628410a2077f7fff51c5c3e20c4ab2d9caae4010b035aac13dae1221155e9d6ca46084aebf68121642140527b4009eee17b716d339
+"@types/node@npm:*, @types/node@npm:^18.18.4":
+  version: 18.18.4
+  resolution: "@types/node@npm:18.18.4"
+  checksum: 4901e91c4cc479bb58acbcd79236a97a0ad6db4a53cb1f4ba4cf32af15324c61b16faa6e31c1b09bf538a20feb5f5274239157ce5237f5741db0b9ab71e69c52
   languageName: node
   linkType: hard
 
@@ -4269,14 +4269,14 @@ __metadata:
     "@dg-scripts/stylelint-config": ^5.14.0
     "@svgr/webpack": ^8.1.0
     "@types/jest": ^29.5.5
-    "@types/node": ^18.18.1
+    "@types/node": ^18.18.4
     babel-loader: ^9.1.3
-    commit-and-tag-version: ^11.2.3
+    commit-and-tag-version: ^11.2.4
     cross-env: ^7.0.3
     css-loader: ^6.8.1
     css-minimizer-webpack-plugin: ^5.0.1
     dotenv: ^16.3.1
-    eslint: ^8.50.0
+    eslint: ^8.51.0
     eslint-webpack-plugin: ^4.0.1
     file-loader: ^6.2.0
     html-loader: ^4.2.0
@@ -4299,7 +4299,7 @@ __metadata:
     tsconfig-paths-webpack-plugin: ^4.1.0
     tslib: ^2.6.2
     typescript: ^5.2.2
-    undici: ^5.25.3
+    undici: ^5.25.4
     url-loader: ^4.1.1
     webpack: ^5.88.2
     webpack-bundle-analyzer: ^4.9.1
@@ -4824,9 +4824,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commit-and-tag-version@npm:^11.2.3":
-  version: 11.2.3
-  resolution: "commit-and-tag-version@npm:11.2.3"
+"commit-and-tag-version@npm:^11.2.4":
+  version: 11.2.4
+  resolution: "commit-and-tag-version@npm:11.2.4"
   dependencies:
     chalk: ^2.4.2
     conventional-changelog: 3.1.25
@@ -4843,7 +4843,7 @@ __metadata:
     yargs: ^17.0.0
   bin:
     commit-and-tag-version: bin/cli.js
-  checksum: f1691a84faad0ceaad8bb5970ac3d217e3eea9e8ad4a516f7b33c18f00fc01b9ccc4b3f3fc0e32ae4593658f90262e04fae5d6b891e6256290adb8566b3a080d
+  checksum: 0edd62df5abde857b82c21d4aa79a56c70177d62ece3b766d0c723aa0619c7fb2cb6e7878e30fef7c2cfa7c84fec81a6460156a7cda259498cf3dc913c39948b
   languageName: node
   linkType: hard
 
@@ -6667,14 +6667,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.50.0":
-  version: 8.50.0
-  resolution: "eslint@npm:8.50.0"
+"eslint@npm:^8.51.0":
+  version: 8.51.0
+  resolution: "eslint@npm:8.51.0"
   dependencies:
     "@eslint-community/eslint-utils": ^4.2.0
     "@eslint-community/regexpp": ^4.6.1
     "@eslint/eslintrc": ^2.1.2
-    "@eslint/js": 8.50.0
+    "@eslint/js": 8.51.0
     "@humanwhocodes/config-array": ^0.11.11
     "@humanwhocodes/module-importer": ^1.0.1
     "@nodelib/fs.walk": ^1.2.8
@@ -6710,7 +6710,7 @@ __metadata:
     text-table: ^0.2.0
   bin:
     eslint: bin/eslint.js
-  checksum: 9ebfe5615dc84700000d218e32ddfdcfc227ca600f65f18e5541ec34f8902a00356a9a8804d9468fd6c8637a5ef6a3897291dad91ba6579d5b32ffeae5e31768
+  checksum: 214fa5d1fcb67af1b8992ce9584ccd85e1aa7a482f8b8ea5b96edc28fa838a18a3b69456db45fc1ed3ef95f1e9efa9714f737292dc681e572d471d02fda9649c
   languageName: node
   linkType: hard
 
@@ -13578,12 +13578,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:^5.25.3":
-  version: 5.25.3
-  resolution: "undici@npm:5.25.3"
+"undici@npm:^5.25.4":
+  version: 5.25.4
+  resolution: "undici@npm:5.25.4"
   dependencies:
     "@fastify/busboy": ^2.0.0
-  checksum: 65b814b7d8b06dab2d41c250d123663fe94edb78cf1a891cf3476569ea66dc425c7d4ba52b91d6f8ed6eba24613dd28e4a5070c372063532c3b997cd343ccc96
+  checksum: 654da161687de893127a685be61a19cb5bae42f4595c316ebf633929d871ac3bcd33edcb74156cea90655dfcd100bfe9b53a4f4749d52fc6ad2232f49a6ca8ab
   languageName: node
   linkType: hard
 
