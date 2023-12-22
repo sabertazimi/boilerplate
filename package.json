@@ -20,7 +20,7 @@
     "url": "https://github.com/sabertazimi/boilerplate/issues"
   },
   "homepage": "https://github.com/sabertazimi/boilerplate",
-  "packageManager": "yarn@3.7.0",
+  "packageManager": "yarn@4.0.2",
   "browserslist": {
     "production": [
       ">0.2%",
