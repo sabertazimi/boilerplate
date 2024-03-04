@@ -20,7 +20,7 @@
     "url": "https://github.com/sabertazimi/boilerplate/issues"
   },
   "homepage": "https://github.com/sabertazimi/boilerplate",
-  "packageManager": "yarn@4.1.0",
+  "packageManager": "pnpm@8.15.4",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -37,19 +37,19 @@
     "badge": "ts-node scripts/badge.ts",
     "build": "cross-env NODE_ENV=production webpack",
     "dev": "cross-env NODE_ENV=development webpack serve",
-    "lint": "yarn lint:style && yarn lint:type-check",
+    "lint": "pnpm lint:style && pnpm lint:type-check",
     "lint:style": "stylelint ./src/**/*.css && eslint --ext .js,.jsx,.ts,.tsx ./src",
     "lint:type-check": "tsc --noEmit",
     "changeset": "commit-and-tag-version --dry-run -s",
     "release": "commit-and-tag-version -s",
-    "start": "yarn dev",
+    "start": "pnpm dev",
     "test": "jest",
     "test:watch": "jest --watch"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
-    "@babel/plugin-proposal-class-properties": "^7.18.6",
-    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "@babel/plugin-transform-class-properties": "^7.23.3",
+    "@babel/plugin-transform-object-rest-spread": "^7.24.0",
     "@babel/preset-env": "^7.24.0",
     "@dg-scripts/eslint-config": "^5.14.2",
     "@dg-scripts/stylelint-config": "^5.14.2",
