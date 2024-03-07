@@ -6,7 +6,7 @@ const paths = pathsToModuleNameMapper(compilerOptions.paths, {
   prefix: '<rootDir>/',
 });
 
-/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
+/** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
   collectCoverage: true,
   coverageDirectory: 'coverage',
@@ -22,10 +22,13 @@ module.exports = {
     '<rootDir>/dist',
     '<rootDir>/coverage',
   ],
-  globals: {
-    'ts-jest': {
-      tsconfig: 'tsconfig.json',
-    },
+  transform: {
+    '^.+\\.tsx?$': [
+      'ts-jest',
+      {
+        tsconfig: 'tsconfig.json',
+      },
+    ],
   },
   testEnvironmentOptions: {
     url: 'http://localhost',

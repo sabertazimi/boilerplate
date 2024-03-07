@@ -1,26 +1,26 @@
-import type { ParticleProps } from './ExplodingParticle';
-import ExplodingParticle from './ExplodingParticle';
+import type { ParticleProps } from './ExplodingParticle'
+import ExplodingParticle from './ExplodingParticle'
 
 class ParticleFactory {
-  particles: ExplodingParticle[];
+  particles: ExplodingParticle[]
   constructor() {
-    this.particles = [];
+    this.particles = []
   }
 
   getParticles(): ExplodingParticle[] {
-    return this.particles;
+    return this.particles
   }
 
   clearParticles(): void {
     while (this.particles.length) {
-      this.particles.pop();
+      this.particles.pop()
     }
   }
 
   emit(particleProps?: ParticleProps): void {
-    const particle = new ExplodingParticle(particleProps);
-    this.particles.push(particle);
+    const particle = new ExplodingParticle(particleProps)
+    this.particles.push(particle)
   }
 }
 
-export default ParticleFactory;
+export default ParticleFactory
